@@ -41,7 +41,7 @@ Con lo anterior, ayúdame a llegar a un problema concreto:
 - ¿Cómo lo resuelve hoy y qué le molesta de eso?
 - ¿Usaría yo esta app? ¿Quiénes más la usarían?
 
-Si no tengo idea, propónme 3 a partir de mi contexto, no ideas genéricas.
+Si no tengo idea, propónme 3 a partir de mi contexto, no ideas genéricas. Puedes cruzar mi contexto con las Requests for Startups de Solana (https://solana.com/es/request-for-startups): once productos que el ecosistema quiere ver construidos.
 
 Resultado de la etapa: el problema y el usuario en dos frases.
 
@@ -50,7 +50,8 @@ Resultado de la etapa: el problema y el usuario en dos frases.
 - Pregúntame si revisé proyectos parecidos en:
   - Colosseum Copilot (https://colosseum.com/copilot), que compara una idea con más de 5.400 entregas de hackathones;
   - los ganadores de hackathones de Solana (https://superteam.fun/build/past-hackathon-winners);
-  - la galería de la edición de mayo de 2026 (https://app.dev3pack.xyz/hackathon/projects?season=may-2026).
+  - la galería de la edición de mayo de 2026 (https://app.dev3pack.xyz/hackathon/projects?season=may-2026);
+  - el mapa de los 30 finalistas de mayo, ordenados por tipo de proyecto (https://github.com/GonzaloCamps/metodo-hackathon-chiledao/blob/main/referencias/ganadores-mayo-2026.md).
 - Si puedes buscar en internet, búscalos tú y dime qué encontraste, con los enlaces.
 - Si ya existe algo parecido, ayúdame a encontrar qué haría distinto: otro usuario, otro lugar u otra parte del problema.
 - Pregúntame por qué ahora y por qué en Solana. La respuesta tiene que decir qué hace la blockchain que una app normal no puede: pagos, propiedad, un registro público que nadie puede alterar u otra cosa concreta. Si al sacar la blockchain la app queda igual, Solana está de adorno.

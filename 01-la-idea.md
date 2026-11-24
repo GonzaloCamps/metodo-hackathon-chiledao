@@ -28,27 +28,21 @@ El ejemplo que mostraron: un estudiante que venía de la comedia armó un mercad
 | [Superteam Build, ideas](https://superteam.fun/build/ideas) y [SendAI Ideas](https://ideas.sendai.fun/) | Ideas y prompts pensados para hackathon |
 | [Ganadores de hackathones de Solana](https://superteam.fun/build/past-hackathon-winners) | Proyectos que ganaron |
 | [Galería de mayo de 2026](https://app.dev3pack.xyz/hackathon/projects?season=may-2026) | Los 386 proyectos públicos de la edición anterior, con demo, repositorio y video |
+| [Requests for Startups de Solana](https://solana.com/es/request-for-startups) | Once productos que el ecosistema de Solana quiere ver construidos, cada uno con por qué ahora y por dónde empezar. Resumen en [referencias/requests-for-startups.md](referencias/requests-for-startups.md) |
 | Pestaña Prizes del panel de Dev3pack | Cada track trae su descripción, requisitos y recursos |
 
 Inspirarse no es copiar: úsalas para ver qué existe y qué falta.
 
-## Lo que se repitió entre los ganadores de mayo de 2026
+## Lo que ganó en mayo de 2026
 
-- **Herencia cripto:** fondos que pasan a otra persona si el dueño deja de dar señales. AfterLife, de Costa Rica, ganó el primer lugar; también Heirloom, Dead Man's Switch y Terminus.
-- **Agentes de IA con pagos, seguridad o mercados propios:** x402Warden, Covantic, SkillGuard, Agent Bazaar, SolAgent y Griffin.
-- **Finanzas para contextos locales:** LiiLend, CredIA, Afriramp y Siyakhula.
-- **Entregas de una sola persona:** x402Warden, Protocol 01, EverYield y StudyChain quedaron entre las premiadas.
+La edición de mayo tuvo 382 proyectos de 84 países y 30 finalistas, y Chile tuvo su sede en la USACH. El mapa completo, con los 30 finalistas, los ganadores por track y los proyectos chilenos, está en [referencias/ganadores-mayo-2026.md](referencias/ganadores-mayo-2026.md). Lo que más se repitió:
 
-## Proyectos chilenos de mayo de 2026
+- **Agentes de IA con pagos y seguridad:** 9 de los 30 finalistas.
+- **Contexto local:** 5, como Tropico, una wallet para venezolanos, y CredIA, un score financiero para trabajadores informales de Ecuador.
+- **Herencia cripto:** 4. AfterLife, de Costa Rica, ganó el primer lugar.
+- **América Latina:** un tercio de los finalistas, 10 de 30.
 
-| Proyecto | Resultado | Qué hace |
-| --- | --- | --- |
-| [x402Warden](https://app.dev3pack.xyz/hackathon/projects/jx760v1vp5ztrrwepnam1x6qch8emv6w) | Bono global a la mejor implementación de x402 | Aplica políticas de gasto, escrow y disputas a los pagos que hacen los agentes de IA |
-| [EverYield](https://app.dev3pack.xyz/hackathon/projects/jx74c25mb6s34rhjdtmg6hjw658enqs1) | Top 2 de Chile, seleccionado para la aceleradora Bridge | Vault sin custodia que genera rendimiento y paga montos en dólares |
-| [Vaquita](https://app.dev3pack.xyz/hackathon/projects/jx7f19z3mvhb8x6n2crndawq918emgpe) |  | Coordinación y trazabilidad de la ayuda en desastres, con IA |
-| [CertiLink](https://app.dev3pack.xyz/hackathon/projects/jx78y0e5f7bktqs7f7knpwgtfh8emjjs) |  | Certificación educativa para OTEC |
-| [EduMint](https://app.dev3pack.xyz/hackathon/projects/jx78s3wcwy1526wdkp6t1v33yx8eme00) |  | Registro, prueba de autoría y monetización de propiedad intelectual académica |
-| [FundBridge](https://app.dev3pack.xyz/hackathon/projects/jx76tn1hg3h0wcr0b7cze7cw0d8en6fv) |  | Evaluación de startups con IA y trazabilidad en la cadena |
+En Chile, x402Warden ganó el bono global a la mejor implementación de x402. EduMint, Vaquita, FundBridge y CertiLink completan el ranking del país.
 
 ## Resultado de esta etapa
 

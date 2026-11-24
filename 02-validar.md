@@ -11,13 +11,14 @@
 
 - en los [ganadores de hackathones de Solana](https://superteam.fun/build/past-hackathon-winners);
 - en la [galería de mayo de 2026](https://app.dev3pack.xyz/hackathon/projects?season=may-2026), donde cada ficha trae demo, repositorio y video;
-- en los [proyectos del Colosseum Agent Hackathon](https://colosseum.com/agent-hackathon/projects), si tu idea usa agentes.
+- en los [proyectos del Colosseum Agent Hackathon](https://colosseum.com/agent-hackathon/projects), si tu idea usa agentes;
+- en el [mapa de los 30 finalistas de mayo](referencias/ganadores-mayo-2026.md), ordenados por tipo de proyecto.
 
 Que exista algo parecido no mata tu idea. Busca qué harías distinto: otro usuario, otro lugar u otra parte del problema.
 
 ## ¿Por qué ahora?
 
-En la sesión mostraron ideas del ecosistema presentadas con tres preguntas: qué construir, por qué ahora y por qué en Solana. Un ejemplo: pagar suscripciones con stablecoins, porque cada vez más negocios las están adoptando.
+En la sesión mostraron ideas del ecosistema presentadas con tres preguntas: qué construir, por qué ahora y por qué en Solana. Un ejemplo: pagar suscripciones con stablecoins, porque cada vez más negocios las están adoptando. Las [Requests for Startups de Solana](referencias/requests-for-startups.md) responden esas preguntas para once ideas: sirven de modelo para responderlas sobre la tuya.
 
 Pregúntate qué cambió para que tu idea tenga sentido hoy y no hace tres años.
 

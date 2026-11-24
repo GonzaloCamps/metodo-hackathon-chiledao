@@ -32,6 +32,13 @@ Si tu IA puede abrir enlaces, también puedes darle el link de este repositorio.
 | [05-construir-y-entregar.md](05-construir-y-entregar.md) | Construir en NoahAI y entregar |
 | [ejemplos/ruta-del-hacker.md](ejemplos/ruta-del-hacker.md) | Un ejemplo completo, de la ficha a la especificación: una app para sellar tu idea y registrar tu ruta hasta la entrega |
 
+### Referencias
+
+| Archivo | Para qué |
+| --- | --- |
+| [referencias/ganadores-mayo-2026.md](referencias/ganadores-mayo-2026.md) | Los 30 finalistas y los ganadores por track de la edición de mayo de 2026, ordenados por tipo de proyecto, con los proyectos chilenos |
+| [referencias/requests-for-startups.md](referencias/requests-for-startups.md) | Las once Requests for Startups de Solana: qué productos quiere ver construidos el ecosistema y por dónde empezar |
+
 ## Reglas que conviene tener presentes
 
 - Se puede usar IA y plantillas, siempre que el proyecto sea tuyo.
@@ -51,6 +58,7 @@ Si algo cambia en la hackathon, manda lo que diga el panel de Dev3pack.
 ## Fuentes
 
 - Reglas, evaluación y proyectos de mayo de 2026: sitio, FAQ y panel de Dev3pack, revisados por ChileDAO el 23 de noviembre de 2026.
+- [Hilo de Dev3pack con los ganadores de mayo de 2026](https://x.com/dev3pack/status/2053882621453811945) y [Requests for Startups de Solana](https://solana.com/es/request-for-startups), revisados el 24 de noviembre de 2026.
 - Sesión «Product Ideation: how to find real ideas», lunes 23 de noviembre, con Deepesh y Solene.
 - Sesión «Vibecode your first app on Solana», martes 24 de noviembre, con Santiago.
 - Prueba completa de NoahAI hecha por ChileDAO el lunes 23 de noviembre.
