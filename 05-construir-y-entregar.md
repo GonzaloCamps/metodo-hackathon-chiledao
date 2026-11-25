@@ -10,15 +10,15 @@
 
 ## Construir en NoahAI
 
-Este es el recorrido que ChileDAO probó completo el lunes 23. Una app simple tomó unos 25 minutos y usó cerca del 11 % de los créditos de un plan de USD 10.
+Este es el recorrido que ChileDAO probó completo el lunes 23. Una app simple tomó unos 25 minutos y usó cerca del 11 % de los créditos de un plan de USD 10. El martes 24, la Ruta del Hacker de los [ejemplos](ejemplos/ruta-del-hacker.md), con su especificación completa y el modelo Core, quedó con el programa en devnet en unos 5 minutos.
 
-1. **Cambia el modelo de Ultra a Core** antes del primer prompt.
+1. **Cambia el modelo de Ultra a Core** antes del primer prompt. Si la página se recarga, vuelve a Ultra: revísalo antes de cada prompt.
 2. **Elige el modo Full Stack Dapp y pega tu especificación.**
-3. **Responde las preguntas de diseño y alcance**, copiando las respuestas de tu especificación.
+3. **Responde las preguntas de diseño y alcance**, copiando las respuestas de tu especificación. Si tu especificación ya trae esas respuestas, NoahAI puede saltarse las preguntas y pasar directo a su plan de trabajo.
 4. **Deja que construya.** NoahAI escribe el programa en Rust con Anchor, lo prueba y lo despliega en devnet. En nuestra prueba lo desplegó sin pedir SOL. En la sesión del martes 24, en cambio, el despliegue falló por falta de fondos y hubo que pedir SOL de prueba en el faucet para la dirección de despliegue que muestra NoahAI.
 5. **Anota la dirección del programa:** está en Publish, pestaña Smart Contract. NoahAI guarda la llave que administra el programa y permite descargarla: no la compartas ni la subas al repositorio.
 6. **Conecta GitHub** desde el ícono de la barra superior del proyecto. NoahAI crea el repositorio y sube cada cambio, pero lo crea privado y sin README.
-7. **Publica la demo en vivo:** en Publish, pestaña Web App, elige Vercel y conecta tu cuenta. Al autorizar, elige «All Projects». Presiona Deploy y queda un link del tipo nombre.vercel.app.
+7. **Publica la demo en vivo:** en Publish, pestaña Web App, elige Vercel (puede venir marcado Netlify) y conecta tu cuenta. Al autorizar, elige «All Projects». Presiona Deploy y queda un link del tipo nombre.vercel.app.
 8. **Prueba la app con Phantom en modo de prueba.** Cada uso gasta muy poco SOL de prueba, cerca de 0,001. En modo de prueba el historial de Phantom aparece vacío: para ver una transacción, usa el enlace al explorador que trae la app.
 
 ## Problemas frecuentes
@@ -26,15 +26,17 @@ Este es el recorrido que ChileDAO probó completo el lunes 23. Una app simple to
 | Síntoma | Causa | Qué hacer |
 | --- | --- | --- |
 | NoahAI no deja enviar las preguntas | La última dice «opcional», pero exige texto | Escribir algo breve |
-| Los créditos se gastan rápido | El modelo Ultra viene por defecto y es el más caro | Cambiar a Core antes del primer prompt |
+| Los créditos se gastan rápido | El modelo Ultra viene por defecto, es el más caro y vuelve si la página se recarga | Revisar que diga Core antes de cada prompt |
 | NoahAI se queda pegado | Una falla de la plataforma | Volver a enviar el prompt |
+| Aparece una página de verificación de seguridad | La protección del sitio, que a veces salta al navegar o recargar | Esperar unos segundos; si pide marcar una casilla, marcarla |
 | Al desplegar, avisa que faltan fondos | La dirección de despliegue no tiene SOL de prueba | Pedir SOL en el faucet para esa dirección |
 | No encuentras la dirección del programa | Está en otra pestaña | Publish, pestaña Smart Contract |
-| El plan del proyecto se queda en «1 of 4 Done» | El indicador no se actualiza, aunque el código esté listo | Revisar el código y Publish, no el indicador |
+| El plan del proyecto se queda a medias, por ejemplo en «1 of 3 Done» | El indicador no se actualiza, aunque el código esté listo | Revisar el código y Publish, no el indicador |
 | Al conectar Vercel, pide elegir un proyecto y no aparece ninguno | El proyecto en Vercel lo crea NoahAI al publicar | Elegir «All Projects» |
 | El repositorio no se ve desde otra cuenta | NoahAI lo crea privado | En GitHub, Settings, sección Danger Zone, pasarlo a público |
 | Phantom no muestra la transacción | En modo de prueba el historial aparece vacío | Usar el enlace al explorador que trae la app |
 | El faucet no entrega SOL | Límite de solicitudes | Probar la app con la wallet de otra persona del equipo que tenga SOL |
+| NoahAI ofrece una auditoría de seguridad (FYEO) | Es un servicio que se paga con créditos de NoahAI | No hace falta para entregar |
 
 ## Qué necesitas para entregar
 
