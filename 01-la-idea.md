@@ -44,6 +44,24 @@ La edición de mayo tuvo 382 proyectos de 84 países y 30 finalistas, y Chile tu
 
 En Chile, x402Warden ganó el bono global a la mejor implementación de x402. EduMint, Vaquita, FundBridge y CertiLink completan el ranking del país.
 
+## Si tu idea usa pagos de agentes (x402)
+
+En la sesión del miércoles 25, Fabián presentó [x402](https://x402.org), un protocolo abierto que convierte el código HTTP 402, «pago requerido», en un paso de pago: una API o una página cobra antes de responder, sin cuentas, claves ni checkout. Lo creó Coinbase y hoy lo administra la x402 Foundation, bajo la Linux Foundation.
+
+Casos de uso que mostró:
+
+- agentes de IA que pagan solos por datos, APIs o cómputo, consulta a consulta;
+- APIs que cobran por consulta, sin planes ni facturas;
+- herramientas MCP y modelos especializados que se pagan por uso;
+- contenido con micropagos: imágenes, artículos o conjuntos de datos;
+- otras ideas que citó de la guía de x402 de Solana: medir llamadas a un RPC, datos de mercado en tiempo real, lecturas de sensores, minutos de GPU, pagar para llegar a una bandeja de entrada y sesiones de juego.
+
+Su diagnóstico: la infraestructura ya está lista y lo que faltan son apps útiles. Antes de elegir x402, ten en cuenta:
+
+- el cobro lo hace un servidor aparte (en su demo, Node con Express) y se paga con USDC de devnet; no hemos probado si NoahAI arma ese servidor;
+- igual necesitas un programa en Rust desplegado en devnet para entregar;
+- todo se hace en devnet: no uses dinero real.
+
 ## Resultado de esta etapa
 
 El problema y el usuario, en dos frases. Sigue con [02-validar.md](02-validar.md).

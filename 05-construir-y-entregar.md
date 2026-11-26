@@ -6,7 +6,7 @@
 - **Cuentas:** NoahAI (entras con Google en [trynoah.ai](https://trynoah.ai)), GitHub y Vercel.
 - **Créditos de NoahAI:** Dev3pack entrega USD 10 por participante y los carga directo en tu cuenta de NoahAI. El formulario está en el panel y en el grupo de Telegram de la hackathon. Usa el mismo correo con que te inscribiste en Dev3pack, porque con ese correo asignan los créditos. Envíalo una sola vez: quien lo envía muchas veces queda fuera.
 - **Phantom en modo de prueba:** instala la extensión y, en Configuración, entra a Developer Settings, activa Testnet Mode y elige Solana Devnet.
-- **SOL de prueba:** pide 1 SOL en [faucet.solana.com](https://faucet.solana.com), entrando con GitHub. Hazlo antes del viernes, porque el faucet limita las solicitudes.
+- **SOL de prueba:** pide 1 SOL en [faucet.solana.com](https://faucet.solana.com), entrando con GitHub: sin GitHub permite dos solicitudes cada 8 horas, y con GitHub el límite sube. Hazlo antes del viernes. Todo se hace en devnet, con SOL de prueba: no uses dinero real.
 
 ## Construir en NoahAI
 
@@ -35,7 +35,7 @@ Este es el recorrido que ChileDAO probó completo el lunes 23. Una app simple to
 | Al conectar Vercel, pide elegir un proyecto y no aparece ninguno | El proyecto en Vercel lo crea NoahAI al publicar | Elegir «All Projects» |
 | El repositorio no se ve desde otra cuenta | NoahAI lo crea privado | En GitHub, Settings, sección Danger Zone, pasarlo a público |
 | Phantom no muestra la transacción | En modo de prueba el historial aparece vacío | Usar el enlace al explorador que trae la app |
-| El faucet no entrega SOL | Límite de solicitudes | Probar la app con la wallet de otra persona del equipo que tenga SOL |
+| El faucet no entrega SOL | Límite de dos solicitudes cada 8 horas | Entrar con GitHub, que sube el límite, o probar la app con la wallet de otra persona del equipo que tenga SOL |
 | NoahAI ofrece una auditoría de seguridad (FYEO) | Es un servicio que se paga con créditos de NoahAI | No hace falta para entregar |
 
 ## Qué necesitas para entregar
