@@ -2,19 +2,22 @@
 
 ## Lo que cambió el jueves 26
 
-Dev3pack avisó por correo que los créditos de NoahAI para la hackathon se agotaron: ya los habían canjeado 1.000 personas. Cerró el formulario de créditos y, en su lugar, dejó un 30 % de descuento en NoahAI. Eso no afecta tu inscripción: puedes participar igual. Si llenaste el formulario a tiempo, revisa tu cuenta de NoahAI antes de pagar: si te asignaron créditos, aparecen ahí. La organización dijo que se entregan por orden de llegada y que no alcanzan para todas las personas. Por eso ahora hay dos rutas para construir:
+Dev3pack avisó por correo que los créditos de NoahAI para la hackathon se agotaron: ya los habían canjeado 1.000 personas. Cerró el formulario de créditos y, en su lugar, dejó un 30 % de descuento: el plan Starter baja de USD 10 a USD 7, y con eso alcanza para varias iteraciones. Nada de esto afecta tu inscripción, y no hace falta pagar: también se puede construir gratis, con la ruta que está en este mismo archivo. Si llenaste el formulario a tiempo, revisa tu cuenta de NoahAI antes de pagar: si te asignaron créditos, aparecen ahí. La organización dijo que se entregan por orden de llegada y que no alcanzan para todas las personas.
+
+## Cuál ruta usar
 
 | | Ruta gratis | Ruta NoahAI |
 | --- | --- | --- |
-| Cuánto cuesta | Nada | Créditos, si alcanzaste a recibirlos, o el plan Starter: USD 10, que con el descuento del viernes 27 quedan en USD 7 |
-| Qué queda construido | El programa en devnet. La interfaz, y con ella la demo en vivo, toma más trabajo | El programa en devnet y la interfaz publicada |
-| Cuánto toma | El programa, el repositorio y el video caben en la tarde del viernes. La interfaz toma el resto del fin de semana | La app completa sale el mismo viernes: en nuestras pruebas, entre 5 y 30 minutos de construcción |
+| Qué IA usas | Una IA gratuita de uso general: DeepSeek, ChatGPT o Claude | NoahAI, una IA hecha para construir apps en Solana |
+| Cuánto cuesta | Nada | USD 7 con el descuento del viernes 27 (USD 10 sin él), o tus créditos si alcanzaste a recibirlos. Alcanza para varias iteraciones |
+| Qué hace la IA por ti | Escribe el código. Tú lo compilas, lo despliegas y lo publicas, siguiendo los pasos de este archivo | Escribe el programa y la interfaz, despliega en devnet y publica la app |
+| Qué tan fácil es | Tiene más pasos a mano | Es más fácil: casi todo sale de tu especificación |
 | Qué tan probada está | El programa, probado por ChileDAO el jueves 26. La interfaz, solo a medias | Probada completa por ChileDAO el lunes 23 y repetida después con otras apps |
-| Para quién | Equipos sin créditos | Equipos con créditos o que paguen un plan |
+| Cuándo conviene | Para partir sin pagar | Si no logras avanzar por la ruta gratis, o si prefieres el camino más corto |
 
 Las dos parten igual: con tu especificación, hecha con [00-instrucciones-para-tu-ia.md](00-instrucciones-para-tu-ia.md). Todo se hace en devnet, con SOL de prueba: no uses dinero real.
 
-Gratis se puede, pero toma más tiempo. La entrega cierra el domingo 29 a las 04:00, así que en la práctica tienes hasta el sábado en la noche. Si quieres la app completa el mismo viernes, la ruta es NoahAI.
+Nuestra recomendación: parte por la ruta gratis. Si te trabas y no logras avanzar, pasa a NoahAI con la misma especificación: es más fácil, y por USD 7 tienes para varias iteraciones. La entrega cierra el domingo 29 a las 04:00, así que organízate para terminar el sábado en la noche.
 
 ## Lo que pidió la organización el jueves 26
 
@@ -73,7 +76,7 @@ Con eso ya puedes enviar la entrega. Lo que no tienes es el link a la demo en vi
 
 ### Después: la interfaz y la demo en vivo
 
-Esta parte no está probada de punta a punta. En nuestra prueba, la IA gratuita se equivocó varias veces y hubo que corregir harto: la app llegó a correr en el computador y a conectar la billetera, pero con fallas. Parte solo cuando tengas lista la meta mínima.
+Esta parte no está probada de punta a punta. En nuestra prueba hubo que corregir varios errores de la IA gratuita: la app llegó a correr en el computador y a conectar la billetera, pero con fallas. Parte cuando tengas lista la meta mínima. Si después de un par de intentos no logras avanzar, pasa a NoahAI con la misma especificación: por USD 7 tienes para varias iteraciones.
 
 1. **Instala Node** en su versión LTS, desde [nodejs.org](https://nodejs.org). Si usas un computador donde no puedes instalar nada, GitHub Codespaces trae Node en el navegador; no lo hemos probado.
 2. **Crea el proyecto** con `npm create vite@latest`, eligiendo React y TypeScript.
@@ -95,9 +98,9 @@ Esta parte no está probada de punta a punta. En nuestra prueba, la IA gratuita 
 
 ## Ruta NoahAI
 
-Sirve si tienes créditos o si tu equipo paga un plan. Basta una cuenta de NoahAI por equipo.
+Es la ruta más fácil: NoahAI construye el programa y la interfaz a partir de tu especificación. Sirve si tienes créditos o si tu equipo paga el plan Starter, y basta una cuenta por equipo. Si no quieres pagar, la ruta gratis de más arriba también llega a una entrega.
 
-- **Precio:** el plan Starter cuesta USD 10. Con el 30 % de descuento del viernes 27 queda en USD 7.
+- **Precio:** el plan Starter cuesta USD 10. Con el 30 % de descuento del viernes 27 queda en USD 7, y alcanza para varias iteraciones si usas el modelo Core.
 - **Descuento:** rige en toda la plataforma de NoahAI, sin cupón, desde las 08:00 de Chile.
 - **Es una suscripción** que se renueva cada mes: si no la vas a seguir usando, cancélala.
 

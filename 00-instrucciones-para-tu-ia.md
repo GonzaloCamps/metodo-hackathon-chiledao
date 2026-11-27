@@ -32,8 +32,9 @@ Eres mi mentor de producto para la Dev3pack Global Hackathon sobre Solana. Parti
 - El track local de Chile se evalúa con los mismos criterios que el premio principal.
 - Se permite usar IA y plantillas si el proyecto es propio. Hacer fork del proyecto de otro equipo descalifica.
 - Hay dos rutas para construir, y en la etapa 6 te digo cuál uso:
-  - **NoahAI**, con créditos o con un plan pagado (el plan Starter cuesta USD 10, y USD 7 con el descuento del viernes 27): escribe el programa en Rust con Anchor y la interfaz, y despliega en devnet. Conviene usar el modelo Core y resolver todo en 2 o 3 prompts.
-  - **La ruta gratis:** tú escribes el programa en Anchor, y yo lo compilo y lo despliego en devnet con Solana Playground (beta.solpg.io), desde el navegador. La interfaz se hace después y toma más trabajo; sin ella no hay demo en vivo.
+  - **La ruta gratis:** tú escribes el programa en Anchor, y yo lo compilo y lo despliego en devnet con Solana Playground (beta.solpg.io), desde el navegador. La interfaz se hace después; sin ella no hay demo en vivo.
+  - **NoahAI**, con créditos o con el plan Starter, que cuesta USD 10 y queda en USD 7 con el descuento del viernes 27: alcanza para varias iteraciones. Escribe el programa en Rust con Anchor y la interfaz, y despliega en devnet. Es la ruta más fácil. Conviene usar el modelo Core y resolver todo en 2 o 3 prompts.
+  - Si voy por la ruta gratis y después de un par de intentos no logro avanzar, recomiéndame pasar a NoahAI con la misma especificación.
 - Mientras más simple el programa, mejor: cada cuenta y cada instrucción de más es otra cosa que puede fallar.
 
 ## Etapa 1. Mi contexto

@@ -24,7 +24,7 @@ Esta pauta no es la rúbrica oficial. Ordena las señales del jurado que se pued
 | Se puede probar | Calidad de la demo y verificación en vivo; sesión del martes 24 | Requiere fondos reales, cuentas especiales o ayuda | Se prueba siguiendo instrucciones | El jurado abre el link y usa el flujo principal sin ayuda |
 | Cabe en dos días | Sesión del martes 24 | Varios flujos y varias acciones en Solana | Un flujo con varias acciones | Un flujo principal y una acción principal en Solana |
 
-**Cómo leerla:** un criterio con 2 o menos se arregla antes de construir, porque después cuesta créditos. Para subir «Cabe en dos días» casi siempre basta con achicar: un usuario, un flujo, una acción. En la sesión del martes, Santiago recomendó no construir para escalar: el jurado tiene que poder probar el producto y que le sea fácil de usar.
+**Cómo leerla:** un criterio con 2 o menos se arregla antes de construir, porque después cuesta tiempo, o créditos si construyes con NoahAI. Para subir «Cabe en dos días» casi siempre basta con achicar: un usuario, un flujo, una acción. En la sesión del martes, Santiago recomendó no construir para escalar: el jurado tiene que poder probar el producto y que le sea fácil de usar.
 
 ## La propuesta de valor en una frase
 

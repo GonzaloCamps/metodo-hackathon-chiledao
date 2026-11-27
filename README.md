@@ -43,9 +43,9 @@ Además:
 
 ## Por qué existe
 
-En la [sesión del martes 24](https://www.youtube.com/watch?v=cMhjoZOhM0Q), Santiago mostró que NoahAI rinde más como ejecutor: la idea se piensa en otra IA, y a NoahAI se le entrega una especificación ya cerrada. En su demo gastó cerca de 2 millones de créditos y el programa no alcanzó a quedar listo. Tus créditos son limitados: piensa primero y construye después.
+En la [sesión del martes 24](https://www.youtube.com/watch?v=cMhjoZOhM0Q), Santiago mostró que NoahAI rinde más como ejecutor: la idea se piensa en otra IA, y a NoahAI se le entrega una especificación ya cerrada. En su demo gastó cerca de 2 millones de créditos y el programa no alcanzó a quedar listo. Los créditos son limitados: piensa primero y construye después.
 
-El jueves 26, Dev3pack avisó por correo que los créditos de NoahAI para la hackathon se agotaron: ya los habían canjeado 1.000 personas, y desde entonces solo hay un 30 % de descuento en NoahAI. Por eso el Método tiene ahora una ruta gratis: una IA gratuita escribe el programa y se despliega en devnet con Solana Playground, desde el navegador. Pensar primero sirve igual en las dos rutas. Ese mismo jueves, en su [sesión de consejos](https://www.youtube.com/watch?v=S9LyP7V82UQ), la organizadora de la hackathon recomendó lo mismo: antes de construir, pídele a una IA un prompt claro de lo que quieres hacer.
+El jueves 26, Dev3pack avisó por correo que los créditos de NoahAI para la hackathon se agotaron: ya los habían canjeado 1.000 personas. Desde entonces hay un 30 % de descuento: el plan Starter queda en USD 7, que alcanzan para varias iteraciones. Y no hace falta pagar: el Método tiene una ruta gratis, en el paso 5, donde una IA gratuita escribe el programa y se despliega en devnet con Solana Playground, desde el navegador. Pensar primero sirve igual en las dos rutas. Ese mismo jueves, en su [sesión de consejos](https://www.youtube.com/watch?v=S9LyP7V82UQ), la organizadora de la hackathon recomendó lo mismo: antes de construir, pídele a una IA un prompt claro de lo que quieres hacer.
 
 ## Cómo usarlo
 

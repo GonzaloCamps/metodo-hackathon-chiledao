@@ -17,6 +17,8 @@ Si vas por la ruta gratis, la especificación es la misma. En vez de pegarla en 
 
 ## Para cuidar tus créditos
 
+Esto vale si construyes con NoahAI: el plan Starter queda en USD 7 con el descuento del viernes 27 y alcanza para varias iteraciones. Si vas por la ruta gratis del paso 5, no hay créditos que cuidar, pero los primeros consejos te sirven igual.
+
 - **Mitad del tiempo planificando y mitad ejecutando.**
 - **Todo en los primeros 2 o 3 prompts.** Después NoahAI empieza a perder contexto.
 - **La especificación en inglés**, porque gasta menos créditos. La interfaz puede quedar en español.
