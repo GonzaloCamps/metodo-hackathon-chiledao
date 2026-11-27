@@ -15,49 +15,11 @@ Este repositorio es para quienes participan desde Chile en la Dev3pack Global Ha
 
 Este método lo armó ChileDAO, que organiza la Build Station de Santiago, con las reglas de la hackathon, lo que enseñaron las sesiones de preparación y sus propias pruebas.
 
-## Si partes de cero: por qué blockchain y por qué Solana
+## Si partes de cero: blockchain y Solana en un minuto
 
-### Primero, por qué una blockchain
+Una blockchain es un registro compartido que no depende de una sola empresa ni de un solo servidor: muchos computadores guardan la misma copia y validan cada cambio, así que lo escrito no se puede borrar ni alterar a escondidas. Sobre ese registro corren programas que cumplen sus reglas solos: mueven dinero, registran quién es dueño de algo o dejan una constancia pública. Aprender a construir ahí te sirve más allá de este fin de semana: es la base de los pagos digitales, de los activos tokenizados y de los agentes de IA que pagan por su cuenta.
 
-Una blockchain es un registro compartido que no depende de una sola empresa ni de un solo servidor. Muchos computadores guardan la misma copia y validan cada cambio, así que lo que queda escrito no se puede borrar ni alterar a escondidas. Sobre ese registro se escriben programas, también llamados contratos inteligentes, que cumplen sus reglas solos: mueven dinero, registran quién es dueño de algo o dejan una constancia pública.
-
-Eso le da a tu app tres cosas que una app normal no tiene:
-
-- **Un registro que nadie puede alterar,** ni siquiera tú: sirve para dejar constancia de algo.
-- **Dinero y propiedad programables:** pagos, premios o tokens que se mueven según las reglas del programa, sin un intermediario.
-- **Un sistema abierto:** cualquiera puede comprobar lo que pasó y construir encima de lo tuyo.
-
-Aprender a construir sobre una blockchain te sirve más allá de este fin de semana. Es la base de los pagos digitales, de los activos tokenizados y de los agentes de IA que pagan por su cuenta, y todavía pocas personas saben hacerlo.
-
-### Por qué Solana, entre otras blockchains
-
-No todas las blockchains sirven para lo mismo. Estas son las tres que más vas a oír:
-
-| | Bitcoin | Ethereum (red principal) | Solana |
-| --- | --- | --- | --- |
-| Para qué nació | Guardar y mover valor | Ser la primera plataforma de programas, o contratos inteligentes | Correr apps a gran escala, rápido y barato |
-| Un bloque nuevo cada | 10 minutos, aproximadamente | 12 segundos | 0,2 segundos, aproximadamente |
-| Cuándo una transacción queda firme | Cerca de una hora, por convención | Cerca de 13 minutos | Menos de un segundo |
-| Cuánto cuesta una transacción | Varía con la demanda | Varía con la demanda | Base fija de 0,000005 SOL por firma: una fracción de centavo de dólar |
-| Cómo crece | Con redes aparte, encima de la principal | Con redes de segunda capa (L2), encima de la principal | En una sola red |
-| En qué se programa | Casi no admite programas | Solidity | Rust |
-
-Lo que eso significa cuando construyes una app:
-
-- **Responde como una app normal.** Con un bloque cada 0,2 segundos y transacciones que quedan firmes en menos de un segundo, quien usa tu app no espera. Esto último es nuevo: llegó con la actualización Alpenglow, en octubre de 2026.
-- **Cada acción cuesta casi nada.** La comisión es tan baja que puedes registrar, premiar o cobrar montos muy chicos muchas veces, sin que el costo se coma el valor. Por eso en Solana funcionan los micropagos y los pagos entre agentes de IA.
-- **Todo vive en una sola red.** Ethereum bajó sus costos sumando muchas redes de segunda capa, pero los usuarios y los fondos quedan repartidos entre ellas. En Solana todos los programas y tokens comparten el mismo estado: tu programa puede usar otro en la misma transacción, sin puentes.
-- **Procesa en paralelo.** Cada transacción declara qué cuentas va a tocar, y las que no se cruzan se ejecutan al mismo tiempo. La red principal de Ethereum, en cambio, las ejecuta de a una. Así Solana aguanta más carga.
-- **Tiene herramientas para partir rápido.** Con Anchor, Solana Playground y la red de prueba, que entrega SOL gratis, puedes escribir, desplegar y probar un programa desde el navegador. Es lo que usa este método en el paso 5.
-
-Lo que conviene saber, para elegir con los ojos abiertos:
-
-- **Ethereum es más antigua y concentra más valor.** Tiene muchos más validadores y cerca de la mitad del dinero de las finanzas descentralizadas. Cuando lo único que importa es la máxima seguridad, muchos proyectos la prefieren.
-- **Validar en Solana exige equipos potentes,** así que la red tiene menos validadores. Es la crítica más frecuente a su descentralización.
-- **Solana se cayó varias veces entre 2021 y comienzos de 2024.** Desde febrero de 2024 no ha tenido una caída completa.
-- **Rust y el modelo de cuentas cuestan más que Solidity al principio.** Por eso este método se apoya en una IA y en Anchor.
-
-En resumen: para una app que la gente usa todos los días, con muchas acciones chicas, Solana es una de las opciones más fuertes. En el paso 2 del método vas a volver a la pregunta «¿por qué en Solana?», esta vez con tu propia idea: qué hace la blockchain en tu app que una app normal no puede, y cómo aprovecharla mejor.
+Solana es una blockchain hecha para apps de uso diario: una transacción queda firme en menos de un segundo, cuesta una fracción de centavo de dólar y todo corre en una sola red. La comparación con Bitcoin y Ethereum, sus ventajas y lo que conviene saber están en el paso 2, en [«¿Por qué en Solana?»](02-validar.md#por-qué-en-solana), donde respondes esa pregunta para tu propia idea.
 
 Si quieres la base completa en español, está la clase [Basics of Blockchain](https://www.youtube.com/watch?v=gZLBW0FJbHk) del Solana Rust Bootcamp de Dev3pack.
 
@@ -68,7 +30,7 @@ El método son cinco pasos, uno por archivo. Cada paso termina con un resultado 
 | Paso | Archivo | Qué haces | Con qué terminas |
 | --- | --- | --- | --- |
 | 1 | [01-la-idea.md](01-la-idea.md) | Buscas una idea que salga de tu contexto: tu red, tu experiencia y los problemas que ves | El problema y el usuario, en dos frases |
-| 2 | [02-validar.md](02-validar.md) | Revisas si ya existe, por qué ahora y por qué en Solana | Lo que existe, tu diferencia y por qué Solana, en tres líneas |
+| 2 | [02-validar.md](02-validar.md) | Revisas si ya existe, por qué ahora y por qué en Solana, con su comparación frente a otras blockchains | Lo que existe, tu diferencia y por qué Solana, en tres líneas |
 | 3 | [03-pauta.md](03-pauta.md) | Evalúas tu idea con las señales que mira el jurado | Tus puntajes y la propuesta de valor en una frase |
 | 4 | [04-especificacion.md](04-especificacion.md) | Acotas la idea a dos días y la conviertes en una especificación | La especificación, lista para construir |
 | 5 | [05-construir-y-entregar.md](05-construir-y-entregar.md) | Construyes por la ruta gratis o con NoahAI, y entregas | El programa en devnet, el repositorio público, la app publicada y el video |

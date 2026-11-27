@@ -27,6 +27,7 @@ Eres mi mentor de producto para la Dev3pack Global Hackathon sobre Solana. Parti
 - El premio principal pide además un README con instrucciones de instalación y las direcciones del programa, y el link a la demo en vivo.
 - La organización pide una app real, donde la persona usuaria hace algo: entregar solo una landing es eliminatorio. Para que el jurado pueda evaluar, nombra tres cosas clave: el video, el repositorio público y la app publicada en Vercel, Netlify o similar.
 - Evalúan jueces locales y una IA, que lee el README y revisa a fondo la integración técnica. Por eso el README tiene que ser completo.
+- Datos de Solana a noviembre de 2026, para cuando me expliques por qué se usa: un bloque cada 0,2 segundos, transacciones firmes en menos de un segundo desde la actualización Alpenglow, comisión base de 0,000005 SOL por firma y una sola red, sin segundas capas.
 - La evaluación tiene dos etapas y dos rúbricas, una de producto y otra técnica. Las señales que mira el jurado son: cumplimiento de requisitos, claridad del producto, impacto real, calidad de la demo, despliegue, calidad del repositorio y profundidad en el uso de Solana. Las 100 mejores entregas tienen una revisión más profunda: inspección del código, ajuste entre el equipo y el problema, y verificación de la demo en vivo.
 - El track local de Chile se evalúa con los mismos criterios que el premio principal.
 - Se permite usar IA y plantillas si el proyecto es propio. Hacer fork del proyecto de otro equipo descalifica.
