@@ -72,7 +72,7 @@ Además:
 
 En la [sesión del martes 24](https://www.youtube.com/watch?v=cMhjoZOhM0Q), Santiago mostró que NoahAI rinde más como ejecutor: la idea se piensa en otra IA, y a NoahAI se le entrega una especificación ya cerrada. En su demo gastó cerca de 2 millones de créditos y el programa no alcanzó a quedar listo. Los créditos son limitados: piensa primero y construye después.
 
-El jueves 26, Dev3pack avisó por correo que los créditos de NoahAI para la hackathon se agotaron: ya los habían canjeado 1.000 personas. Desde entonces hay un 30 % de descuento: el plan Starter queda en USD 7, que alcanzan para varias iteraciones. Y no hace falta pagar: el Método tiene una ruta gratis, en el paso 5, donde una IA gratuita escribe el programa y se despliega en devnet con Solana Playground, desde el navegador. Pensar primero sirve igual en las dos rutas. Ese mismo jueves, en su [sesión de consejos](https://www.youtube.com/watch?v=S9LyP7V82UQ), la organizadora de la hackathon recomendó lo mismo: antes de construir, pídele a una IA un prompt claro de lo que quieres hacer.
+El jueves 26, Dev3pack avisó por correo que los créditos de NoahAI para la hackathon se agotaron. El viernes 27 hay un 30 % de descuento, sin cupón: el plan Starter, de USD 10, queda en USD 7, que alcanzan para varias iteraciones. Y no hace falta pagar: el Método tiene una ruta gratis, en el paso 5, donde una IA gratuita escribe el programa y se despliega en devnet con Solana Playground, desde el navegador. Pensar primero sirve igual en las dos rutas. Ese mismo jueves, en su [sesión de consejos](https://www.youtube.com/watch?v=S9LyP7V82UQ), la organizadora de la hackathon recomendó lo mismo: antes de construir, pídele a una IA un prompt claro de lo que quieres hacer.
 
 ## Referencias
 
@@ -125,7 +125,7 @@ Si algo cambia en la hackathon, manda lo que diga el panel de Dev3pack.
 - Datos de Solana y su comparación con otras blockchains, revisados el 27 de noviembre de 2026: [comisiones](https://solana.com/docs/core/fees) y [Alpenglow](https://solana.com/upgrades/alpenglow) en la documentación de Solana, y la [comparación técnica con Ethereum](https://www.helius.dev/solana-vs-ethereum) de Helius.
 - Prueba completa de NoahAI hecha por ChileDAO el lunes 23 de noviembre.
 - Prueba de la ruta gratis hecha por ChileDAO el jueves 26 de noviembre: un programa escrito por DeepSeek, compilado y desplegado en devnet con Solana Playground.
-- Correo de Dev3pack sobre los créditos de NoahAI, del jueves 26 de noviembre: créditos agotados y 30 % de descuento.
+- Correo de Dev3pack sobre los créditos de NoahAI, del jueves 26 de noviembre: límite de créditos alcanzado y 30 % de descuento el viernes 27, sin cupón, desde las 11:00 UTC (08:00 en Chile).
 
 ## Licencia
 

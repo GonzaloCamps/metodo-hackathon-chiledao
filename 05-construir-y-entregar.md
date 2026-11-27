@@ -18,7 +18,7 @@ Si tu IA avisa que el mensaje es muy largo, envía primero el prompt con la espe
 
 ## Lo que cambió el jueves 26
 
-Dev3pack avisó por correo que los créditos de NoahAI para la hackathon se agotaron: ya los habían canjeado 1.000 personas. Cerró el formulario de créditos y, en su lugar, dejó un 30 % de descuento: el plan Starter baja de USD 10 a USD 7, y con eso alcanza para varias iteraciones. Nada de esto afecta tu inscripción, y no hace falta pagar: también se puede construir gratis, con la ruta que está en este mismo archivo. Si llenaste el formulario a tiempo, revisa tu cuenta de NoahAI antes de pagar: si te asignaron créditos, aparecen ahí. La organización dijo que se entregan por orden de llegada y que no alcanzan para todas las personas.
+Dev3pack avisó por correo que los créditos de NoahAI para la hackathon se agotaron. Cerró el formulario de créditos y, en su lugar, anunció un 30 % de descuento para el viernes 27, sin cupón: el plan Starter baja de USD 10 a USD 7, y con eso alcanza para varias iteraciones. Nada de esto afecta tu inscripción, y no hace falta pagar: también se puede construir gratis, con la ruta que está en este mismo archivo. Si llenaste el formulario a tiempo, revisa tu cuenta de NoahAI antes de pagar: si te asignaron créditos, aparecen ahí. La organización dijo que se entregan por orden de llegada y que no alcanzan para todas las personas.
 
 ## Cuál ruta usar
 
@@ -33,7 +33,7 @@ Dev3pack avisó por correo que los créditos de NoahAI para la hackathon se agot
 
 Las dos parten igual: con tu especificación, hecha con [00-instrucciones-para-tu-ia.md](00-instrucciones-para-tu-ia.md). Todo se hace en devnet, con SOL de prueba: no uses dinero real.
 
-Nuestra recomendación: parte por la ruta gratis. Si te trabas y no logras avanzar, pasa a NoahAI con la misma especificación: es más fácil, y por USD 7 tienes para varias iteraciones. La entrega cierra el domingo 29 a las 04:00, así que organízate para terminar el sábado en la noche.
+Nuestra recomendación: parte por la ruta gratis. Si te trabas y no logras avanzar, pasa a NoahAI con la misma especificación: es más fácil, y por USD 7, con el descuento del viernes 27, tienes para varias iteraciones. La entrega cierra el domingo 29 a las 04:00, así que organízate para terminar el sábado en la noche.
 
 ## Lo que pidió la organización el jueves 26
 
@@ -92,7 +92,7 @@ Con eso ya puedes enviar la entrega. Lo que no tienes es el link a la demo en vi
 
 ### Después: la interfaz y la demo en vivo
 
-Esta parte no está probada de punta a punta. En nuestra prueba hubo que corregir varios errores de la IA gratuita: la app llegó a correr en el computador y a conectar la billetera, pero con fallas. Parte cuando tengas lista la meta mínima. Si después de un par de intentos no logras avanzar, pasa a NoahAI con la misma especificación: por USD 7 tienes para varias iteraciones.
+Esta parte no está probada de punta a punta. En nuestra prueba hubo que corregir varios errores de la IA gratuita: la app llegó a correr en el computador y a conectar la billetera, pero con fallas. Parte cuando tengas lista la meta mínima. Si después de un par de intentos no logras avanzar, pasa a NoahAI con la misma especificación: por USD 7, con el descuento del viernes 27, tienes para varias iteraciones.
 
 1. **Instala Node** en su versión LTS, desde [nodejs.org](https://nodejs.org). Si usas un computador donde no puedes instalar nada, GitHub Codespaces trae Node en el navegador; no lo hemos probado.
 2. **Crea el proyecto** con `npm create vite@latest`, eligiendo React y TypeScript.
