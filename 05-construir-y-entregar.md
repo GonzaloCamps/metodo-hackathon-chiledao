@@ -8,10 +8,13 @@ Dev3pack avisó que se alcanzó el límite de créditos de NoahAI para la hackat
 | --- | --- | --- |
 | Cuánto cuesta | Nada | Créditos, si alcanzaste a recibirlos, o un plan pagado |
 | Qué queda construido | El programa en devnet. La interfaz es opcional y toma más trabajo | El programa en devnet y la interfaz publicada |
+| Cuánto toma | El programa, el repositorio y el video caben en la tarde del viernes. La interfaz toma el resto del fin de semana | La app completa sale el mismo viernes: en nuestras pruebas, entre 5 y 30 minutos de construcción |
 | Qué tan probada está | El programa, probado por ChileDAO el jueves 26. La interfaz, solo a medias | Probada completa por ChileDAO el lunes 23 y repetida después con otras apps |
 | Para quién | Equipos sin créditos | Equipos con créditos o que paguen un plan |
 
 Las dos parten igual: con tu especificación, hecha con [00-instrucciones-para-tu-ia.md](00-instrucciones-para-tu-ia.md). Todo se hace en devnet, con SOL de prueba: no uses dinero real.
+
+Gratis se puede, pero toma más tiempo. La entrega cierra el domingo 29 a las 04:00, así que en la práctica tienes hasta el sábado en la noche. Si quieres la app completa el mismo viernes, la ruta es NoahAI.
 
 ## Antes de construir
 
@@ -47,7 +50,7 @@ ChileDAO la probó el jueves 26 con una app de votación. El programa lo escribi
    - pedirle a tu IA un archivo de pruebas para Playground (`tests/anchor.test.ts`) y ejecutarlo escribiendo `test` en la terminal de Playground, como indica la documentación de Anchor.
 
    Cada llamada queda como una transacción que puedes abrir en el explorador.
-9. **Sube el código a un repositorio público.** En GitHub creas un repositorio público y, con «Add file» y «Create new file», pegas el programa con el nombre `programa/lib.rs` (al escribir la barra, GitHub crea la carpeta). Sube también el IDL, como `programa/idl.json`, y un README que diga qué problema resuelve, cuál es la dirección del programa en devnet y cómo probarlo. No hace falta instalar nada.
+9. **Sube el código a un repositorio público.** En GitHub creas un repositorio público y, con «Add file» y «Create new file», pegas el programa con el nombre `programa/lib.rs` (al escribir la barra, GitHub crea la carpeta). Sube también el IDL, como `programa/idl.json`, y un README que diga qué problema resuelve, cuál es la dirección del programa en devnet y cómo probarlo. No hace falta instalar nada. Si tu programa tiene una instrucción que deja fijo al administrador, como `initialize`, llámala tú antes de publicar la dirección: quien la llame primero queda como administrador.
 10. **Graba el video,** de menos de 3 minutos: el problema, el programa en Playground, una llamada a una instrucción y la transacción en el explorador.
 
 Con eso ya puedes enviar la entrega. Lo que no tienes es el link a la demo en vivo, que es lo que pide además el premio principal.
@@ -61,14 +64,16 @@ Esta parte no está probada de punta a punta. En nuestra prueba, la IA gratuita 
 3. **Pídele la interfaz a tu IA,** pegando la dirección del programa y el IDL:
 
    ```
-   Con la especificación, la dirección del programa desplegado en devnet y su IDL, escribe la interfaz como una app Vite + React + TypeScript. Usa el wallet adapter de Solana con Phantom en devnet, y @coral-xyz/anchor en la versión 0.29.0 para llamar al programa, porque el IDL viene en el formato antiguo de Anchor. Usa la menor cantidad de archivos posible y entrégame cada archivo completo con su ruta, más un README con qué hace la app, cómo probarla y la dirección del programa.
+   Con la especificación, la dirección del programa desplegado en devnet y su IDL, escribe la interfaz como una app Vite + React + TypeScript. Usa el wallet adapter de Solana con Phantom en devnet, y @coral-xyz/anchor fijado en la versión 0.29.0 exacta en package.json, sin el símbolo ^, porque el IDL viene en el formato antiguo de Anchor. Envía los números de tipo u64 como BN. Usa la menor cantidad de archivos posible y entrégame cada archivo completo con su ruta, más un README con qué hace la app, cómo probarla y la dirección del programa.
 
    Dirección del programa: [pega aquí]
    IDL: [pega aquí]
    ```
 
-   En nuestra prueba, Playground entregó el IDL en el formato antiguo de Anchor: por eso el pedido fija la versión 0.29.0. DeepSeek entrega cada archivo por separado, y hay que guardarlo con su nombre y en su carpeta. ChatGPT puede entregar el proyecto en un archivo ZIP; nosotros lo vimos con una cuenta pagada.
-4. **Pruébala en tu computador** con `npm install` y `npm run dev`. Cuando salga un error, pégaselo a tu IA y reemplaza el archivo completo. Cuenta con varias vueltas.
+   En nuestra prueba, Playground entregó el IDL en el formato antiguo de Anchor: por eso el pedido fija la versión 0.29.0. DeepSeek entrega cada archivo por separado, y hay que guardarlo con su nombre y en su carpeta. En nuestra prueba, DeepSeek escribió los archivos y ChatGPT los empaquetó en un ZIP. Si una IA te arma el ZIP, revisa que no haya cortado ningún archivo: a nosotros nos llegó el programa cortado a la mitad.
+4. **Pruébala en tu computador** con `npm install` y `npm run dev`. Cuando salga un error, pégaselo a tu IA y reemplaza el archivo completo. Cuenta con varias vueltas. Al revisar la interfaz que escribió la IA en nuestra prueba encontramos dos errores, y conviene mirarlos primero:
+   - `package.json` pedía Anchor 0.30, que no lee el IDL del formato antiguo: tiene que decir `"@coral-xyz/anchor": "0.29.0"`. Si lo cambias, borra `node_modules` y `package-lock.json` y corre `npm install` de nuevo.
+   - Enviaba números comunes donde el programa espera `u64`: Anchor los necesita como `BN`, por ejemplo `new BN(10)`.
 5. **Súbela al mismo repositorio.** Arrastra todos los archivos y carpetas menos `node_modules`: la web de GitHub no acepta más de 100 archivos por subida. Si sabes usar git, usa git.
 6. **Publícala en Vercel:** importas el repositorio y presionas Deploy. Queda un link del tipo nombre.vercel.app. Si la construcción falla, Vercel muestra el error en su registro: corriges el archivo en GitHub y Vercel vuelve a desplegar.
 
