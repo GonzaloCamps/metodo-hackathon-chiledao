@@ -29,6 +29,8 @@ Así cada copia es corta y cabe en cualquier IA gratuita.
 
 El archivo de instrucciones es el más importante: lleva las reglas de la hackathon, lo que pide el jurado y un resumen de todo el método, y con eso tu IA te guía con preguntas. Revisa la especificación línea por línea antes de construir.
 
+Antes de la conversación 2, deja listos Phantom y el SOL de prueba: el [paso a paso](#phantom-y-sol-de-prueba-paso-a-paso) está más abajo, en esta misma página.
+
 Ten abierta una segunda IA gratuita, por si la primera llega a su límite de uso. Y si prefieres planificar sin una IA, sigue los archivos en orden, del 01 al 05.
 
 ## Quiénes estamos detrás
@@ -65,8 +67,34 @@ El método son cinco pasos, uno por archivo. Cada paso termina con un resultado 
 Además:
 
 - **[00-instrucciones-para-tu-ia.md](00-instrucciones-para-tu-ia.md):** los pasos 1 a 4 en un solo texto para pegar en una IA, que te guía con preguntas. Es la forma recomendada de usar el método.
+- **[Phantom y SOL de prueba, paso a paso](#phantom-y-sol-de-prueba-paso-a-paso):** cómo dejar lista tu wallet de prueba, en esta misma página. Vuelve cada vez que lo necesites.
 - **[ejemplos/ruta-del-hacker.md](ejemplos/ruta-del-hacker.md):** un ejemplo completo, de la ficha a la especificación: una app para sellar tu idea y registrar tu ruta hasta la entrega.
 - **[referencias/](referencias/):** los ganadores de la edición anterior y las ideas que el ecosistema de Solana quiere ver construidas.
+
+## Phantom y SOL de prueba, paso a paso
+
+Para construir y probar tu app necesitas una wallet en devnet, la red de prueba de Solana, con SOL de prueba. Nada de esto usa dinero real. Déjalo listo antes de construir y vuelve a esta sección cada vez que lo necesites: el paso 5 te avisa en qué momentos.
+
+### Phantom en modo de prueba
+
+1. **Instala la extensión de Phantom** desde [phantom.com/download](https://phantom.com/download). Está para Chrome, Brave y Edge.
+2. **Crea una wallet.** Si ya usas Phantom con fondos reales, crea una cuenta aparte para la hackathon: la organización recomienda no desarrollar con tu wallet personal.
+3. **Guarda tu frase de recuperación,** si Phantom te la muestra: anótala fuera del computador y no se la des a nadie, tampoco a una IA. Con ella, cualquiera puede tomar el control de tu wallet.
+4. **Activa el modo de prueba:** en Configuración, entra a Developer Settings, activa Testnet Mode y elige Solana Devnet.
+5. **Copia tu dirección** con el botón de copiar que está junto al nombre de tu cuenta. Es la que vas a pegar en el faucet.
+
+### SOL de prueba
+
+1. **Entra a [faucet.solana.com](https://faucet.solana.com) con tu cuenta de GitHub.** Sin GitHub, el faucet permite dos solicitudes cada 8 horas; con GitHub, el límite sube.
+2. **Pega la dirección de tu Phantom y pide 1 SOL.** Para usar una app alcanza de sobra: cada uso gasta cerca de 0,001 SOL de prueba.
+3. **Si vas por la ruta gratis, pide además 5 SOL para la billetera de Solana Playground,** que es la que despliega tu programa. Su dirección aparece en la barra de abajo de Playground. En nuestra prueba, desplegar usó cerca de 1,6 SOL.
+4. **Revisa que llegó:** el saldo aparece en Phantom, con Solana Devnet elegida.
+
+Pídelo apenas puedas: la organización advirtió que durante la hackathon todos lo piden a la vez y el faucet se satura. Si no te entrega, basta una wallet con SOL por equipo para probar la app.
+
+### Ver una transacción
+
+En modo de prueba, el historial de Phantom aparece vacío. Para ver una transacción, usa el enlace al explorador que trae tu app, o entra a [explorer.solana.com](https://explorer.solana.com), elige Devnet y busca la dirección.
 
 ## Por qué existe
 

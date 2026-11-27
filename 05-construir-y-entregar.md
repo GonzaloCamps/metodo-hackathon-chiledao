@@ -5,7 +5,7 @@
 Esta es la segunda conversación del método. Abre una conversación nueva en tu IA y pega tres cosas: este prompt, tu especificación y este archivo completo, que puedes copiar desde su [versión en texto plano](https://raw.githubusercontent.com/GonzaloCamps/metodo-hackathon-chiledao/main/05-construir-y-entregar.md).
 
 ```
-Voy a construir mi proyecto para la Dev3pack Global Hackathon sobre Solana. Abajo van mi especificación y el paso 5 del Método Hackathon ChileDAO. Guíame con lo que dice ese archivo, sin saltarte pasos ni cambiarlos por otros que conozcas. Primero pregúntame por cuál ruta voy, la gratis o NoahAI, y qué tengo listo. Dame un paso a la vez y espera a que te cuente cómo me fue. Si te pego un error, corrígelo y devuélveme el archivo completo. Si después de un par de intentos no avanzo por la ruta gratis, recomiéndame pasar a NoahAI con la misma especificación.
+Voy a construir mi proyecto para la Dev3pack Global Hackathon sobre Solana. Abajo van mi especificación y el paso 5 del Método Hackathon ChileDAO. Guíame con lo que dice ese archivo, sin saltarte pasos ni cambiarlos por otros que conozcas. Primero pregúntame por cuál ruta voy, la gratis o NoahAI, y qué tengo listo. Dame un paso a la vez y espera a que te cuente cómo me fue. Si te pego un error, corrígelo y devuélveme el archivo completo. Si después de un par de intentos no avanzo por la ruta gratis, recomiéndame pasar a NoahAI con la misma especificación. Cada vez que tenga que usar Phantom o pedir SOL de prueba, recuérdame cómo se hace, con lo que dice la sección «Antes de construir».
 
 MI ESPECIFICACIÓN:
 [pega aquí]
@@ -51,8 +51,10 @@ En su sesión de consejos para la hackathon ([video](https://www.youtube.com/wat
 
 - **Inscripción:** en la [plataforma de Dev3pack](https://app.dev3pack.xyz/s/CHILE) y, si vas a la Build Station, en el [Luma de ChileDAO](https://luma.com/ovbwi0fj), con el mismo correo. Puedes inscribirte hasta el mismo viernes.
 - **Cuentas:** GitHub, Vercel (el plan gratis alcanza y la cuenta se crea con GitHub) y una IA gratuita, como DeepSeek, ChatGPT o Claude. NoahAI (entras con Google en [trynoah.ai](https://trynoah.ai)) solo si vas por esa ruta.
-- **Phantom en modo de prueba:** instala la extensión y, en Configuración, entra a Developer Settings, activa Testnet Mode y elige Solana Devnet. Si ya usas Phantom con fondos reales, crea una cuenta aparte para la hackathon: la organización recomienda no desarrollar con tu wallet personal.
-- **SOL de prueba:** se pide en [faucet.solana.com](https://faucet.solana.com), entrando con GitHub: sin GitHub permite dos solicitudes cada 8 horas, y con GitHub el límite sube. Pídelo apenas puedas: la organización advirtió que durante la hackathon todos lo piden a la vez y el faucet se satura. Para usar una app basta 1 SOL en Phantom. Si vas por la ruta gratis, necesitas además 5 SOL para la billetera de Solana Playground: el paso 3 de esa ruta dice cómo pedirlos.
+- **Phantom en modo de prueba:** instala la extensión desde [phantom.com/download](https://phantom.com/download) y crea una wallet. Si Phantom te muestra una frase de recuperación, anótala fuera del computador y no se la des a nadie, tampoco a una IA. En Configuración, entra a Developer Settings, activa Testnet Mode y elige Solana Devnet. Copia tu dirección con el botón que está junto al nombre de tu cuenta. Si ya usas Phantom con fondos reales, crea una cuenta aparte para la hackathon: la organización recomienda no desarrollar con tu wallet personal.
+- **SOL de prueba:** se pide en [faucet.solana.com](https://faucet.solana.com), entrando con GitHub: sin GitHub permite dos solicitudes cada 8 horas, y con GitHub el límite sube. Pídelo apenas puedas: la organización advirtió que durante la hackathon todos lo piden a la vez y el faucet se satura. Para usar una app basta 1 SOL en Phantom. Si vas por la ruta gratis, necesitas además 5 SOL para la billetera de Solana Playground: el paso 3 de esa ruta dice cómo pedirlos. El saldo aparece en Phantom, con Solana Devnet elegida.
+
+El paso a paso de Phantom y del faucet también está en la portada del Método: [Phantom y SOL de prueba, paso a paso](README.md#phantom-y-sol-de-prueba-paso-a-paso). Vuelve ahí cada vez que lo necesites.
 
 ## Ruta gratis
 
@@ -75,7 +77,7 @@ Si quieres ver un despliegue explicado en español, está la clase [Deployment +
    Mientras más simple el programa, mejor: cada cuenta y cada instrucción de más es otra cosa que puede fallar.
 
 2. **Abre Solana Playground** en [beta.solpg.io](https://beta.solpg.io) y crea su billetera con el botón «Not connected», abajo a la izquierda. Te ofrece guardar el archivo de la billetera: guárdalo, porque la billetera vive en ese navegador. No lo compartas ni lo subas al repositorio.
-3. **Dale SOL de prueba a esa billetera.** Su dirección aparece en la barra de abajo. Cópiala, entra a [faucet.solana.com](https://faucet.solana.com) con GitHub y pide 5 SOL para esa dirección. Playground intenta pedir SOL por su cuenta y muestra un error 410, porque ese faucet está cerrado: no importa.
+3. **Dale SOL de prueba a esa billetera.** Su dirección aparece en la barra de abajo. Cópiala, entra a [faucet.solana.com](https://faucet.solana.com) con GitHub y pide 5 SOL para esa dirección. Playground intenta pedir SOL por su cuenta y muestra un error 410, porque ese faucet está cerrado: no importa. Si no recuerdas cómo usar el faucet, el paso a paso está en el [README](README.md#phantom-y-sol-de-prueba-paso-a-paso).
 4. **Crea el proyecto y pega el programa.** Con «Create a new project» eliges Anchor, y reemplazas el contenido de `src/lib.rs` por el que te dio tu IA.
 5. **Compila con Build,** en la pestaña Build & Deploy. Si sale un error, cópialo completo, pégaselo a tu IA, pídele el archivo corregido entero y vuelve a compilar.
 6. **Despliega con Deploy.** Tarda: en nuestra prueba fueron 7 minutos, con avisos de «Reached rate-limits» y «transactions not confirmed, retrying». Es normal, porque el servidor público de devnet limita las solicitudes. No cierres la pestaña hasta leer «Deployment successful». Nuestro programa usó cerca de 1,6 SOL de prueba.
@@ -106,7 +108,7 @@ Esta parte no está probada de punta a punta. En nuestra prueba hubo que corregi
    ```
 
    En nuestra prueba, Playground entregó el IDL en el formato antiguo de Anchor: por eso el pedido fija la versión 0.29.0. DeepSeek entrega cada archivo por separado, y hay que guardarlo con su nombre y en su carpeta. En nuestra prueba, DeepSeek escribió los archivos y ChatGPT los empaquetó en un ZIP. Si una IA te arma el ZIP, revisa que no haya cortado ningún archivo: a nosotros nos llegó el programa cortado a la mitad.
-4. **Pruébala en tu computador** con `npm install` y `npm run dev`. Cuando salga un error, pégaselo a tu IA y reemplaza el archivo completo. Cuenta con varias vueltas. Al revisar la interfaz que escribió la IA en nuestra prueba encontramos dos errores, y conviene mirarlos primero:
+4. **Pruébala en tu computador** con `npm install` y `npm run dev`. Para conectar la billetera necesitas Phantom en modo de prueba y con SOL: si te falta, [repásalo en el README](README.md#phantom-y-sol-de-prueba-paso-a-paso). Cuando salga un error, pégaselo a tu IA y reemplaza el archivo completo. Cuenta con varias vueltas. Al revisar la interfaz que escribió la IA en nuestra prueba encontramos dos errores, y conviene mirarlos primero:
    - `package.json` pedía Anchor 0.30, que no lee el IDL del formato antiguo: tiene que decir `"@coral-xyz/anchor": "0.29.0"`. Si lo cambias, borra `node_modules` y `package-lock.json` y corre `npm install` de nuevo.
    - Enviaba números comunes donde el programa espera `u64`: Anchor los necesita como `BN`, por ejemplo `new BN(10)`.
 5. **Súbela al mismo repositorio.** Arrastra todos los archivos y carpetas menos `node_modules`: la web de GitHub no acepta más de 100 archivos por subida. Si sabes usar git, usa git.
@@ -127,13 +129,15 @@ Este es el recorrido que ChileDAO probó completo el lunes 23. Una app simple to
 1. **Cambia el modelo de Ultra a Core** antes del primer prompt. Si la página se recarga, vuelve a Ultra: revísalo antes de cada prompt.
 2. **Elige el modo Full Stack Dapp y pega tu especificación.**
 3. **Responde las preguntas de diseño y alcance**, copiando las respuestas de tu especificación. Si tu especificación ya trae esas respuestas, NoahAI puede saltarse las preguntas y pasar directo a su plan de trabajo.
-4. **Deja que construya.** NoahAI escribe el programa en Rust con Anchor, lo prueba y lo despliega en devnet. En nuestra prueba lo desplegó sin pedir SOL. En la sesión del martes 24, en cambio, el despliegue falló por falta de fondos y hubo que pedir SOL de prueba en el faucet para la dirección de despliegue que muestra NoahAI.
+4. **Deja que construya.** NoahAI escribe el programa en Rust con Anchor, lo prueba y lo despliega en devnet. En nuestra prueba lo desplegó sin pedir SOL. En la sesión del martes 24, en cambio, el despliegue falló por falta de fondos y hubo que pedir SOL de prueba en el faucet para la dirección de despliegue que muestra NoahAI ([cómo pedirlo](README.md#phantom-y-sol-de-prueba-paso-a-paso)).
 5. **Anota la dirección del programa:** está en Publish, pestaña Smart Contract. NoahAI guarda la llave que administra el programa y permite descargarla: no la compartas ni la subas al repositorio.
 6. **Conecta GitHub** desde el ícono de la barra superior del proyecto. NoahAI crea el repositorio y sube cada cambio, pero lo crea privado y sin README.
 7. **Publica la demo en vivo:** en Publish, pestaña Web App, elige Vercel (puede venir marcado Netlify) y conecta tu cuenta. Al autorizar, elige «All Projects». Presiona Deploy y queda un link del tipo nombre.vercel.app.
-8. **Prueba la app con Phantom en modo de prueba.** Cada uso gasta muy poco SOL de prueba, cerca de 0,001. En modo de prueba el historial de Phantom aparece vacío: para ver una transacción, usa el enlace al explorador que trae la app.
+8. **Prueba la app con Phantom en modo de prueba.** Cada uso gasta muy poco SOL de prueba, cerca de 0,001. En modo de prueba el historial de Phantom aparece vacío: para ver una transacción, usa el enlace al explorador que trae la app. Si tu Phantom no está en modo de prueba o no tiene SOL, sigue el [paso a paso del README](README.md#phantom-y-sol-de-prueba-paso-a-paso).
 
 ## Problemas frecuentes
+
+Para todo lo de Phantom y el faucet, el paso a paso está en el [README](README.md#phantom-y-sol-de-prueba-paso-a-paso).
 
 ### En Solana Playground
 
