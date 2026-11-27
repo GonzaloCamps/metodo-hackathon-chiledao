@@ -2,7 +2,7 @@
 
 ## Parte de tu contexto
 
-En la sesión del lunes 23, Deepesh y Solene insistieron en lo mismo: no elijas una idea al azar.
+En la [sesión del lunes 23](https://www.youtube.com/watch?v=yM6HUVMjxdI), Deepesh y Solene insistieron en lo mismo: no elijas una idea al azar.
 
 - **Busca donde tienes red, experiencia o pasión.** Si construyes algo de entretenimiento sin conocer a nadie en ese mundo, te va a costar hacer lo correcto para las personas correctas.
 - **Mira los problemas de tu día a día y de tu entorno.** En Argentina muchos equipos construyen soluciones de pago, porque la inflación les toca de cerca.
@@ -57,7 +57,7 @@ En Chile, x402Warden ganó el bono global a la mejor implementación de x402. Ed
 
 ## Si tu idea usa pagos de agentes (x402)
 
-En la sesión del miércoles 25, Fabián presentó [x402](https://x402.org), un protocolo abierto que convierte el código HTTP 402, «pago requerido», en un paso de pago: una API o una página cobra antes de responder, sin cuentas, claves ni checkout. Lo creó Coinbase y hoy lo administra la x402 Foundation, bajo la Linux Foundation.
+En la [sesión del miércoles 25](https://www.youtube.com/watch?v=BoqpFVoYWQg), Fabián presentó [x402](https://x402.org), un protocolo abierto que convierte el código HTTP 402, «pago requerido», en un paso de pago: una API o una página cobra antes de responder, sin cuentas, claves ni checkout. Lo creó Coinbase y hoy lo administra la x402 Foundation, bajo la Linux Foundation.
 
 Casos de uso que mostró:
 

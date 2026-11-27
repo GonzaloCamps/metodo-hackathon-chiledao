@@ -2,11 +2,11 @@
 
 ## Lo que cambió el jueves 26
 
-Dev3pack avisó que se alcanzó el límite de créditos de NoahAI para la hackathon y cerró el formulario de créditos. Eso no afecta tu inscripción: puedes participar igual. Si llenaste el formulario a tiempo, revisa tu cuenta de NoahAI antes de pagar: si te asignaron créditos, aparecen ahí. La organización dijo que se entregan por orden de llegada y que no alcanzan para todas las personas. Por eso ahora hay dos rutas para construir:
+Dev3pack avisó por correo que los créditos de NoahAI para la hackathon se agotaron: ya los habían canjeado 1.000 personas. Cerró el formulario de créditos y, en su lugar, dejó un 30 % de descuento en NoahAI. Eso no afecta tu inscripción: puedes participar igual. Si llenaste el formulario a tiempo, revisa tu cuenta de NoahAI antes de pagar: si te asignaron créditos, aparecen ahí. La organización dijo que se entregan por orden de llegada y que no alcanzan para todas las personas. Por eso ahora hay dos rutas para construir:
 
 | | Ruta gratis | Ruta NoahAI |
 | --- | --- | --- |
-| Cuánto cuesta | Nada | Créditos, si alcanzaste a recibirlos, o un plan pagado |
+| Cuánto cuesta | Nada | Créditos, si alcanzaste a recibirlos, o el plan Starter: USD 10, que con el descuento del viernes 27 quedan en USD 7 |
 | Qué queda construido | El programa en devnet. La interfaz, y con ella la demo en vivo, toma más trabajo | El programa en devnet y la interfaz publicada |
 | Cuánto toma | El programa, el repositorio y el video caben en la tarde del viernes. La interfaz toma el resto del fin de semana | La app completa sale el mismo viernes: en nuestras pruebas, entre 5 y 30 minutos de construcción |
 | Qué tan probada está | El programa, probado por ChileDAO el jueves 26. La interfaz, solo a medias | Probada completa por ChileDAO el lunes 23 y repetida después con otras apps |
@@ -42,6 +42,8 @@ Para enviar la entrega son obligatorias tres cosas: la dirección de tu programa
 No dejes la interfaz como un extra. La organización cuenta la app publicada entre las tres cosas clave para evaluar un proyecto, y el premio principal pide el link a la demo en vivo. Sin app publicada el formulario se puede enviar, pero el jurado tiene menos que evaluar y quedas fuera del premio principal.
 
 ChileDAO la probó el jueves 26 con una app de votación. El programa lo escribió DeepSeek en su versión gratuita, compiló en Solana Playground en 7 segundos y quedó desplegado en devnet en 7 minutos.
+
+Si quieres ver un despliegue explicado en español, está la clase [Deployment + Tips & Tricks](https://www.youtube.com/watch?v=ZWlm8H3htKc) del Solana Rust Bootcamp de Dev3pack.
 
 ### Meta mínima: programa, repositorio y video
 
@@ -95,8 +97,11 @@ Esta parte no está probada de punta a punta. En nuestra prueba, la IA gratuita 
 
 Sirve si tienes créditos o si tu equipo paga un plan. Basta una cuenta de NoahAI por equipo.
 
-- **Descuento:** el viernes 27, NoahAI tiene 30 % de descuento en toda su plataforma, sin cupón, desde las 08:00 de Chile.
-- **Precio:** el plan Starter costaba USD 10 antes del descuento cuando lo contratamos, el lunes 23. Es una suscripción que se renueva cada mes: si no la vas a seguir usando, cancélala.
+- **Precio:** el plan Starter cuesta USD 10. Con el 30 % de descuento del viernes 27 queda en USD 7.
+- **Descuento:** rige en toda la plataforma de NoahAI, sin cupón, desde las 08:00 de Chile.
+- **Es una suscripción** que se renueva cada mes: si no la vas a seguir usando, cancélala.
+
+La sesión donde Santiago mostró este flujo es [Vibecode your first app on Solana](https://www.youtube.com/watch?v=cMhjoZOhM0Q), en inglés.
 
 Este es el recorrido que ChileDAO probó completo el lunes 23. Una app simple tomó unos 25 minutos y usó cerca del 11 % de los créditos de un plan de USD 10. El martes 24, la Ruta del Hacker de los [ejemplos](ejemplos/ruta-del-hacker.md), con su especificación completa y el modelo Core, quedó con el programa en devnet en unos 5 minutos.
 

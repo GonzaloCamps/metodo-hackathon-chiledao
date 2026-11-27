@@ -2,7 +2,7 @@
 
 ## Tú planificas, NoahAI ejecuta
 
-En la sesión del martes 24, Santiago lo explicó con dos roles: una arquitecta que diseña la casa y un equipo de construcción que la levanta. NoahAI es muy bueno construyendo, pero para pensar la idea, el nombre o el logo conviene otra IA, como ChatGPT, Claude o Codex, que no gasta tus créditos de NoahAI.
+En la [sesión del martes 24](https://www.youtube.com/watch?v=cMhjoZOhM0Q), Santiago lo explicó con dos roles: una arquitecta que diseña la casa y un equipo de construcción que la levanta. NoahAI es muy bueno construyendo, pero para pensar la idea, el nombre o el logo conviene otra IA, como ChatGPT, Claude o Codex, que no gasta tus créditos de NoahAI.
 
 Su método tiene cuatro pasos:
 

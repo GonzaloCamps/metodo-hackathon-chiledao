@@ -2,7 +2,7 @@
 
 ## ¿Ya existe?
 
-**Si usas un agente de IA** (Claude Code, Codex u otro), instala [Colosseum Copilot](https://colosseum.com/copilot). Es una skill que conoce las entregas de hackathones anteriores de Solana y del ecosistema; las instrucciones para instalarla están en su página. En la sesión del lunes 23 la recomendaron para todas las personas, con preguntas como:
+**Si usas un agente de IA** (Claude Code, Codex u otro), instala [Colosseum Copilot](https://colosseum.com/copilot). Es una skill que conoce las entregas de hackathones anteriores de Solana y del ecosistema; las instrucciones para instalarla están en su página. En la [sesión del lunes 23](https://www.youtube.com/watch?v=yM6HUVMjxdI) la recomendaron para todas las personas, con preguntas como:
 
 - «¿Alguien construyó una forma de que los fans financien a artistas?»
 - «¿Qué le falta a mi idea frente a lo que ya existe?»
