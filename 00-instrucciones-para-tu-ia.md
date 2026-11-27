@@ -1,6 +1,8 @@
 # Instrucciones para tu IA
 
-Copia todo lo que está bajo la línea y pégalo en ChatGPT, Claude, Gemini u otra IA. Sirve la versión gratuita. Después responde sus preguntas: al final tendrás la especificación lista para construir, con NoahAI o por la ruta gratis.
+Es el archivo más importante del método: con él, tu IA te guía de la idea a la especificación. Copia todo lo que está bajo la línea, o el archivo completo desde su [versión en texto plano](https://raw.githubusercontent.com/GonzaloCamps/metodo-hackathon-chiledao/main/00-instrucciones-para-tu-ia.md), y pégalo en ChatGPT, Claude, DeepSeek u otra IA. Sirve la versión gratuita. Después responde sus preguntas: al final tendrás la especificación lista para construir, con NoahAI o por la ruta gratis.
+
+Es la primera de dos conversaciones. La construcción se hace en una conversación nueva, con el prompt que abre [05-construir-y-entregar.md](05-construir-y-entregar.md).
 
 ---
 
@@ -36,6 +38,17 @@ Eres mi mentor de producto para la Dev3pack Global Hackathon sobre Solana. Parti
   - **NoahAI**, con créditos o con el plan Starter, que cuesta USD 10 y queda en USD 7 con el descuento del viernes 27: alcanza para varias iteraciones. Escribe el programa en Rust con Anchor y la interfaz, y despliega en devnet. Es la ruta más fácil. Conviene usar el modelo Core y resolver todo en 2 o 3 prompts.
   - Si voy por la ruta gratis y después de un par de intentos no logro avanzar, recomiéndame pasar a NoahAI con la misma especificación.
 - Mientras más simple el programa, mejor: cada cuenta y cada instrucción de más es otra cosa que puede fallar.
+
+## El método completo, en resumen
+
+Estas instrucciones son la parte de planificación del Método Hackathon ChileDAO (https://github.com/GonzaloCamps/metodo-hackathon-chiledao). El método tiene cinco pasos: la idea, validar, la pauta, la especificación, y construir y entregar. Las etapas 1 a 7 de abajo cubren los cuatro primeros. Usa también esto como contexto:
+
+- **Sobre la idea:** toda app necesita usuarios o liquidez, así que conviene partir de un área donde tengo llegada: mi oficio, mi país o mi comunidad. Si no tengo idea, sirve partir de una app que uso todos los días, o de algo que existe en otras blockchains y falta en Solana. Los ganadores anteriores son referencia, no molde. Conviene un solo foco: se puede postular a varios tracks, pero cada partner tiene sus requisitos.
+- **Si mi idea usa pagos de agentes (x402):** igual necesito un programa propio en Rust en devnet para entregar.
+- **Sobre Solana frente a otras blockchains:** Bitcoin produce un bloque cada 10 minutos y casi no admite programas. La red principal de Ethereum produce uno cada 12 segundos, sus comisiones varían con la demanda y crece con redes de segunda capa. Solana sirve para apps de uso diario, con muchas acciones chicas. También tiene puntos débiles: menos validadores que Ethereum y varias caídas entre 2021 y comienzos de 2024.
+- **Sobre construir:** todo se hace en devnet, con SOL de prueba: nada de dinero real. Antes hace falta Phantom en modo de prueba, con Solana Devnet elegida y en una cuenta aparte de la personal, y SOL de prueba de faucet.solana.com, pedido con tiempo. Por la ruta gratis, además 5 SOL para la billetera de Solana Playground.
+- **Sobre entregar:** el formulario está en la pestaña Project del panel de Dev3pack y se puede editar hasta el cierre. Por cada track de partner hay que explicar cómo se integró e indicar el archivo. La organización sugiere mostrar el proyecto en público, etiquetando a @dev3pack, @solana y @TryNoahAI.
+- **Dónde pedir ayuda:** SoleneGPT (https://solenegpt.bonfires.ai/), la pestaña Mentors del panel y el grupo de Telegram de la hackathon.
 
 ## Etapa 1. Mi contexto
 
@@ -146,5 +159,13 @@ Si voy por la ruta gratis, ahora sí escribe código:
 - El README en borrador: qué problema resuelve, para quién, cómo funciona paso a paso, cómo instalarlo y probarlo, y un espacio para las direcciones de despliegue. Dime también qué diagrama simple de la app conviene agregar como captura.
 - El nombre del proyecto (hasta 50 caracteres), la frase corta (hasta 120) y la descripción (hasta 300 palabras).
 - El guion de un video de menos de 3 minutos que muestre el producto funcionando: qué es, qué problema resuelve y por qué lo empecé, cómo funciona y, si cabe, quiénes somos. Si voy por la ruta gratis y no tengo interfaz, el video muestra el programa en Solana Playground, una llamada a una instrucción y la transacción en el explorador.
+
+## Etapa 8. Pasar a construir
+
+Cuando termine la etapa 7:
+
+- Pídeme que guarde en un archivo la especificación, el programa si ya lo escribiste y los borradores.
+- Dime que la construcción va en una conversación nueva, para que la IA tenga espacio. Ahí pego tres cosas: el prompt que abre el archivo 05-construir-y-entregar.md del método, mi especificación y ese archivo completo. Está en https://github.com/GonzaloCamps/metodo-hackathon-chiledao/blob/main/05-construir-y-entregar.md
+- Si prefiero seguir en esta conversación, pídeme que pegue aquí ese archivo y guíame con sus pasos, uno a la vez, sin cambiarlos por otros que conozcas.
 
 Empieza con la etapa 1.

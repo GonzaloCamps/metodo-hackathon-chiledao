@@ -1,5 +1,21 @@
 # 5. Construir y entregar
 
+## Si construyes con tu IA
+
+Esta es la segunda conversación del método. Abre una conversación nueva en tu IA y pega tres cosas: este prompt, tu especificación y este archivo completo, que puedes copiar desde su [versión en texto plano](https://raw.githubusercontent.com/GonzaloCamps/metodo-hackathon-chiledao/main/05-construir-y-entregar.md).
+
+```
+Voy a construir mi proyecto para la Dev3pack Global Hackathon sobre Solana. Abajo van mi especificación y el paso 5 del Método Hackathon ChileDAO. Guíame con lo que dice ese archivo, sin saltarte pasos ni cambiarlos por otros que conozcas. Primero pregúntame por cuál ruta voy, la gratis o NoahAI, y qué tengo listo. Dame un paso a la vez y espera a que te cuente cómo me fue. Si te pego un error, corrígelo y devuélveme el archivo completo. Si después de un par de intentos no avanzo por la ruta gratis, recomiéndame pasar a NoahAI con la misma especificación.
+
+MI ESPECIFICACIÓN:
+[pega aquí]
+
+PASO 5 DEL MÉTODO:
+[pega aquí este archivo completo]
+```
+
+Si tu IA avisa que el mensaje es muy largo, envía primero el prompt con la especificación y después el archivo, en un segundo mensaje.
+
 ## Lo que cambió el jueves 26
 
 Dev3pack avisó por correo que los créditos de NoahAI para la hackathon se agotaron: ya los habían canjeado 1.000 personas. Cerró el formulario de créditos y, en su lugar, dejó un 30 % de descuento: el plan Starter baja de USD 10 a USD 7, y con eso alcanza para varias iteraciones. Nada de esto afecta tu inscripción, y no hace falta pagar: también se puede construir gratis, con la ruta que está en este mismo archivo. Si llenaste el formulario a tiempo, revisa tu cuenta de NoahAI antes de pagar: si te asignaron créditos, aparecen ahí. La organización dijo que se entregan por orden de llegada y que no alcanzan para todas las personas.
@@ -50,7 +66,7 @@ Si quieres ver un despliegue explicado en español, está la clase [Deployment +
 
 ### Meta mínima: programa, repositorio y video
 
-1. **Pídele el programa a tu IA.** En la misma conversación donde hiciste la especificación, pega esto:
+1. **Pídele el programa a tu IA.** En tu conversación de construir, o en la misma donde hiciste la especificación, pega esto:
 
    ```
    Con la especificación de arriba, escribe solo el programa en Anchor (Rust), en un único archivo lib.rs, para compilarlo y desplegarlo en Solana Playground (beta.solpg.io). Usa la versión de Anchor que trae Solana Playground y deja declare_id!("11111111111111111111111111111111"): Playground lo reemplaza al compilar. No uses init_if_needed, Token-2022 ni eventos. Calcula bien el espacio de cada cuenta: 8 bytes del discriminador más los campos. No escribas la interfaz todavía. Después dime en qué orden llamar las instrucciones para probar el programa, y con qué valores.

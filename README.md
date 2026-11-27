@@ -4,6 +4,33 @@
 
 Este repositorio es para quienes participan desde Chile en la Dev3pack Global Hackathon sobre Solana, del viernes 27 al domingo 29 de noviembre de 2026. Es un método en cinco pasos para llegar de una idea propia a un proyecto entregado, aunque nunca hayas construido sobre una blockchain. Los cuatro primeros pasos van antes de lo técnico: encontrar la idea, validarla, evaluarla con los criterios del jurado y convertirla en una especificación. El quinto explica dos rutas para construir y entregar: una gratis y otra con NoahAI.
 
+## Cómo usar este README
+
+Un README es la portada de un repositorio: el texto que explica qué hay aquí y cómo usarlo. Este sirve para dos cosas.
+
+**1. Para leerlo.** En diez minutos sabes de qué trata la hackathon, cuáles son los cinco pasos del método y dónde está cada cosa.
+
+**2. Para pasárselo a tu IA y conversarlo.** Sirve ChatGPT, Claude, DeepSeek u otra, en su versión gratuita. Abre [este README en texto plano](https://raw.githubusercontent.com/GonzaloCamps/metodo-hackathon-chiledao/main/README.md), selecciona todo, cópialo y pégalo en tu IA junto con este prompt:
+
+```
+Este es el README del Método Hackathon ChileDAO, la guía que voy a usar en la Dev3pack Global Hackathon sobre Solana. Léelo completo y responde solo con lo que dice: si algo no está, dímelo en vez de suponerlo. Explícame en simple de qué se trata y cuáles son los cinco pasos, y resuelve mis dudas sobre blockchain, Solana y la hackathon. Cuando te diga «partamos», pídeme que pegue el archivo 00-instrucciones-para-tu-ia.md y sigue esas instrucciones.
+
+[pega aquí el README completo]
+```
+
+### El método con tu IA, en dos conversaciones
+
+Así cada copia es corta y cabe en cualquier IA gratuita.
+
+| Conversación | Qué pegas | Con qué terminas |
+| --- | --- | --- |
+| 1. Planificar | [00-instrucciones-para-tu-ia.md](00-instrucciones-para-tu-ia.md) completo ([texto plano](https://raw.githubusercontent.com/GonzaloCamps/metodo-hackathon-chiledao/main/00-instrucciones-para-tu-ia.md)) | Tu especificación y los borradores del README y del video |
+| 2. Construir | El prompt que abre [05-construir-y-entregar.md](05-construir-y-entregar.md), tu especificación y ese archivo completo ([texto plano](https://raw.githubusercontent.com/GonzaloCamps/metodo-hackathon-chiledao/main/05-construir-y-entregar.md)) | Tu programa en devnet y tu entrega |
+
+El archivo de instrucciones es el más importante: lleva las reglas de la hackathon, lo que pide el jurado y un resumen de todo el método, y con eso tu IA te guía con preguntas. Revisa la especificación línea por línea antes de construir.
+
+Ten abierta una segunda IA gratuita, por si la primera llega a su límite de uso. Y si prefieres planificar sin una IA, sigue los archivos en orden, del 01 al 05.
+
 ## Quiénes estamos detrás
 
 **ChileDAO** es una comunidad abierta para aprender e impulsar el uso de IA y blockchain en Chile. Nació en 2025 y hoy organiza hackathones, talleres y eventos, y acompaña a empresas y proyectos que quieren entrar a Chile y Latinoamérica. Desde junio de 2025 ha organizado 22 eventos, más de 1.000 personas siguen sus actividades en Luma y 200 participan en su grupo de WhatsApp. Nos juntamos todos los martes a las 19:00, por Discord, y estamos conformando una cooperativa de trabajo para aportar a la transformación digital de Chile.
@@ -47,23 +74,7 @@ En la [sesión del martes 24](https://www.youtube.com/watch?v=cMhjoZOhM0Q), Sant
 
 El jueves 26, Dev3pack avisó por correo que los créditos de NoahAI para la hackathon se agotaron: ya los habían canjeado 1.000 personas. Desde entonces hay un 30 % de descuento: el plan Starter queda en USD 7, que alcanzan para varias iteraciones. Y no hace falta pagar: el Método tiene una ruta gratis, en el paso 5, donde una IA gratuita escribe el programa y se despliega en devnet con Solana Playground, desde el navegador. Pensar primero sirve igual en las dos rutas. Ese mismo jueves, en su [sesión de consejos](https://www.youtube.com/watch?v=S9LyP7V82UQ), la organizadora de la hackathon recomendó lo mismo: antes de construir, pídele a una IA un prompt claro de lo que quieres hacer.
 
-## Cómo usarlo
-
-### Con tu IA (recomendado)
-
-1. Abre ChatGPT, Claude, Gemini u otra IA. Sirve la versión gratuita.
-2. Abre [00-instrucciones-para-tu-ia.md](00-instrucciones-para-tu-ia.md), copia todo lo que está bajo la línea y pégalo en tu IA.
-3. Responde sus preguntas. Te guía por la idea, la validación, la pauta y el alcance, y al final te entrega la especificación.
-4. Revisa la especificación línea por línea antes de construir.
-5. Sigue con [05-construir-y-entregar.md](05-construir-y-entregar.md): ahí están las dos rutas para construir, la gratis y la de NoahAI.
-
-Si tu IA puede abrir enlaces, también puedes darle el link de este repositorio.
-
-### Leyéndolo
-
-Sigue los archivos en orden, del 01 al 05. La tabla de «Qué vas a encontrar» dice qué haces en cada uno y con qué terminas.
-
-### Referencias
+## Referencias
 
 | Archivo | Para qué |
 | --- | --- |
