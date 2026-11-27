@@ -13,6 +13,8 @@ Su método tiene cuatro pasos:
 
 Los pasos 1 y 2 los hace [00-instrucciones-para-tu-ia.md](00-instrucciones-para-tu-ia.md).
 
+Si vas por la ruta gratis, la especificación es la misma. En vez de pegarla en NoahAI, le pides el programa a tu IA y lo despliegas con Solana Playground, como explica [05-construir-y-entregar.md](05-construir-y-entregar.md).
+
 ## Para cuidar tus créditos
 
 - **Mitad del tiempo planificando y mitad ejecutando.**
@@ -66,4 +68,4 @@ Decide de antemano el único cambio que le pedirás a NoahAI después de la prim
 
 ## Resultado de esta etapa
 
-La especificación en un bloque, lista para pegar en NoahAI, y el segundo prompt. Sigue con [05-construir-y-entregar.md](05-construir-y-entregar.md). Para ver un ejemplo completo, abre [ejemplos/ruta-del-hacker.md](ejemplos/ruta-del-hacker.md).
+La especificación en un bloque, lista para construir, y el segundo prompt si vas con NoahAI. Sigue con [05-construir-y-entregar.md](05-construir-y-entregar.md). Para ver un ejemplo completo, abre [ejemplos/ruta-del-hacker.md](ejemplos/ruta-del-hacker.md).

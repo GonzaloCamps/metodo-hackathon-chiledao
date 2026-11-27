@@ -1,14 +1,16 @@
 # Método Hackathon ChileDAO
 
-**De la idea a la especificación, antes de gastar tus créditos de NoahAI.**
+**De la idea a la especificación, y de ahí a la entrega: gratis o con NoahAI.**
 
-Este repositorio es para quienes participan desde Chile en la Dev3pack Global Hackathon sobre Solana, del viernes 27 al domingo 29 de noviembre de 2026. Ordena todo lo que va antes de lo técnico: encontrar una idea propia, validarla, evaluarla con los criterios del jurado, acotarla a dos días y convertirla en una especificación lista para pegar en NoahAI.
+Este repositorio es para quienes participan desde Chile en la Dev3pack Global Hackathon sobre Solana, del viernes 27 al domingo 29 de noviembre de 2026. Ordena todo lo que va antes de lo técnico: encontrar una idea propia, validarla, evaluarla con los criterios del jurado, acotarla a dos días y convertirla en una especificación lista para construir. Después explica dos rutas para construir y entregar: una gratis y otra con NoahAI.
 
-Lo armó ChileDAO, que organiza la Build Station de Santiago, con las reglas de la hackathon y lo que enseñaron las sesiones de preparación del lunes 23 y el martes 24 de noviembre.
+Lo armó ChileDAO, que organiza la Build Station de Santiago, con las reglas de la hackathon, lo que enseñaron las sesiones de preparación y sus propias pruebas.
 
 ## Por qué existe
 
 En la sesión del martes 24, Santiago mostró que NoahAI rinde más como ejecutor: la idea se piensa en otra IA, y a NoahAI se le entrega una especificación ya cerrada. En su demo gastó cerca de 2 millones de créditos y el programa no alcanzó a quedar listo. Tus créditos son limitados: piensa primero y construye después.
+
+El jueves 26, Dev3pack avisó que se alcanzó el límite de créditos de NoahAI para la hackathon. Por eso el Método tiene ahora una ruta gratis: una IA gratuita escribe el programa y se despliega en devnet con Solana Playground, desde el navegador. Pensar primero sirve igual en las dos rutas.
 
 ## Cómo usarlo
 
@@ -16,8 +18,9 @@ En la sesión del martes 24, Santiago mostró que NoahAI rinde más como ejecuto
 
 1. Abre ChatGPT, Claude, Gemini u otra IA. Sirve la versión gratuita.
 2. Abre [00-instrucciones-para-tu-ia.md](00-instrucciones-para-tu-ia.md), copia todo lo que está bajo la línea y pégalo en tu IA.
-3. Responde sus preguntas. Te guía por la idea, la validación, la pauta y el alcance, y al final te entrega la especificación para NoahAI.
-4. Revisa la especificación línea por línea antes de pegarla en NoahAI.
+3. Responde sus preguntas. Te guía por la idea, la validación, la pauta y el alcance, y al final te entrega la especificación.
+4. Revisa la especificación línea por línea antes de construir.
+5. Sigue con [05-construir-y-entregar.md](05-construir-y-entregar.md): ahí están las dos rutas para construir, la gratis y la de NoahAI.
 
 Si tu IA puede abrir enlaces, también puedes darle el link de este repositorio.
 
@@ -28,8 +31,8 @@ Si tu IA puede abrir enlaces, también puedes darle el link de este repositorio.
 | [01-la-idea.md](01-la-idea.md) | Encontrar una idea que salga de tu contexto |
 | [02-validar.md](02-validar.md) | Ver si ya existe, por qué ahora y por qué en Solana |
 | [03-pauta.md](03-pauta.md) | Evaluar la idea con los criterios del jurado |
-| [04-especificacion.md](04-especificacion.md) | Acotarla a dos días y escribir la especificación para NoahAI |
-| [05-construir-y-entregar.md](05-construir-y-entregar.md) | Construir en NoahAI y entregar |
+| [04-especificacion.md](04-especificacion.md) | Acotarla a dos días y escribir la especificación |
+| [05-construir-y-entregar.md](05-construir-y-entregar.md) | Construir, gratis o con NoahAI, y entregar |
 | [ejemplos/ruta-del-hacker.md](ejemplos/ruta-del-hacker.md) | Un ejemplo completo, de la ficha a la especificación: una app para sellar tu idea y registrar tu ruta hasta la entrega |
 
 ### Referencias
@@ -61,7 +64,10 @@ Si algo cambia en la hackathon, manda lo que diga el panel de Dev3pack.
 - [Hilo de Dev3pack con los ganadores de mayo de 2026](https://x.com/dev3pack/status/2053882621453811945) y [Requests for Startups de Solana](https://solana.com/es/request-for-startups), revisados el 24 de noviembre de 2026.
 - Sesión «Product Ideation: how to find real ideas», lunes 23 de noviembre, con Deepesh y Solene.
 - Sesión «Vibecode your first app on Solana», martes 24 de noviembre, con Santiago.
+- Sesión sobre x402, miércoles 25 de noviembre, con Fabián.
 - Prueba completa de NoahAI hecha por ChileDAO el lunes 23 de noviembre.
+- Prueba de la ruta gratis hecha por ChileDAO el jueves 26 de noviembre: un programa escrito por DeepSeek, compilado y desplegado en devnet con Solana Playground.
+- Aviso de Dev3pack sobre los créditos de NoahAI, del jueves 26 de noviembre.
 
 ## Licencia
 

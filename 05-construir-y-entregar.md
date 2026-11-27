@@ -1,14 +1,83 @@
 # 5. Construir y entregar
 
-## Antes del viernes
+## Lo que cambió el jueves 26
+
+Dev3pack avisó que se alcanzó el límite de créditos de NoahAI para la hackathon y cerró el formulario de créditos. Eso no afecta tu inscripción: puedes participar igual. Por eso ahora hay dos rutas para construir:
+
+| | Ruta gratis | Ruta NoahAI |
+| --- | --- | --- |
+| Cuánto cuesta | Nada | Créditos, si alcanzaste a recibirlos, o un plan pagado |
+| Qué queda construido | El programa en devnet. La interfaz es opcional y toma más trabajo | El programa en devnet y la interfaz publicada |
+| Qué tan probada está | El programa, probado por ChileDAO el jueves 26. La interfaz, solo a medias | Probada completa por ChileDAO el lunes 23 y repetida después con otras apps |
+| Para quién | Equipos sin créditos | Equipos con créditos o que paguen un plan |
+
+Las dos parten igual: con tu especificación, hecha con [00-instrucciones-para-tu-ia.md](00-instrucciones-para-tu-ia.md). Todo se hace en devnet, con SOL de prueba: no uses dinero real.
+
+## Antes de construir
 
 - **Inscripción:** en la [plataforma de Dev3pack](https://app.dev3pack.xyz/s/CHILE) y, si vas a la Build Station, en el [Luma de ChileDAO](https://luma.com/ovbwi0fj), con el mismo correo. Puedes inscribirte hasta el mismo viernes.
-- **Cuentas:** NoahAI (entras con Google en [trynoah.ai](https://trynoah.ai)), GitHub y Vercel.
-- **Créditos de NoahAI:** Dev3pack entrega USD 10 por participante y los carga directo en tu cuenta de NoahAI. El formulario está en el panel y en el grupo de Telegram de la hackathon. Usa el mismo correo con que te inscribiste en Dev3pack, porque con ese correo asignan los créditos. Envíalo una sola vez: quien lo envía muchas veces queda fuera.
+- **Cuentas:** GitHub, Vercel (el plan gratis alcanza y la cuenta se crea con GitHub) y una IA gratuita, como DeepSeek, ChatGPT o Claude. NoahAI (entras con Google en [trynoah.ai](https://trynoah.ai)) solo si vas por esa ruta.
 - **Phantom en modo de prueba:** instala la extensión y, en Configuración, entra a Developer Settings, activa Testnet Mode y elige Solana Devnet.
-- **SOL de prueba:** pide 1 SOL en [faucet.solana.com](https://faucet.solana.com), entrando con GitHub: sin GitHub permite dos solicitudes cada 8 horas, y con GitHub el límite sube. Hazlo antes del viernes. Todo se hace en devnet, con SOL de prueba: no uses dinero real.
+- **SOL de prueba:** se pide en [faucet.solana.com](https://faucet.solana.com), entrando con GitHub: sin GitHub permite dos solicitudes cada 8 horas, y con GitHub el límite sube. Para usar una app basta 1 SOL en Phantom. Si vas por la ruta gratis, necesitas además 5 SOL para la billetera de Solana Playground: el paso 3 de esa ruta dice cómo pedirlos.
 
-## Construir en NoahAI
+## Ruta gratis
+
+Para enviar la entrega son obligatorias tres cosas: la dirección de tu programa en devnet, un repositorio público y un video de menos de 3 minutos. Ninguna exige una interfaz. Por eso esta ruta tiene una meta mínima, que ya deja una entrega válida, y una parte opcional.
+
+ChileDAO la probó el jueves 26 con una app de votación. El programa lo escribió DeepSeek en su versión gratuita, compiló en Solana Playground en 7 segundos y quedó desplegado en devnet en 7 minutos.
+
+### Meta mínima: programa, repositorio y video
+
+1. **Pídele el programa a tu IA.** En la misma conversación donde hiciste la especificación, pega esto:
+
+   ```
+   Con la especificación de arriba, escribe solo el programa en Anchor (Rust), en un único archivo lib.rs, para compilarlo y desplegarlo en Solana Playground (beta.solpg.io). Usa la versión de Anchor que trae Solana Playground y deja declare_id!("11111111111111111111111111111111"): Playground lo reemplaza al compilar. No uses init_if_needed, Token-2022 ni eventos. Calcula bien el espacio de cada cuenta: 8 bytes del discriminador más los campos. No escribas la interfaz todavía. Después dime en qué orden llamar las instrucciones para probar el programa, y con qué valores.
+   ```
+
+   Mientras más simple el programa, mejor: cada cuenta y cada instrucción de más es otra cosa que puede fallar.
+
+2. **Abre Solana Playground** en [beta.solpg.io](https://beta.solpg.io) y crea su billetera con el botón «Not connected», abajo a la izquierda. Te ofrece guardar el archivo de la billetera: guárdalo, porque la billetera vive en ese navegador. No lo compartas ni lo subas al repositorio.
+3. **Dale SOL de prueba a esa billetera.** Su dirección aparece en la barra de abajo. Cópiala, entra a [faucet.solana.com](https://faucet.solana.com) con GitHub y pide 5 SOL para esa dirección. Playground intenta pedir SOL por su cuenta y muestra un error 410, porque ese faucet está cerrado: no importa.
+4. **Crea el proyecto y pega el programa.** Con «Create a new project» eliges Anchor, y reemplazas el contenido de `src/lib.rs` por el que te dio tu IA.
+5. **Compila con Build,** en la pestaña Build & Deploy. Si sale un error, cópialo completo, pégaselo a tu IA, pídele el archivo corregido entero y vuelve a compilar.
+6. **Despliega con Deploy.** Tarda: en nuestra prueba fueron 7 minutos, con avisos de «Reached rate-limits» y «transactions not confirmed, retrying». Es normal, porque el servidor público de devnet limita las solicitudes. No cierres la pestaña hasta leer «Deployment successful». Nuestro programa usó cerca de 1,6 SOL de prueba.
+7. **Anota la dirección del programa y baja el IDL.** La dirección está en «Program ID», en la misma pestaña, y el IDL se baja con Export, en la sección IDL. Comprueba la dirección en [explorer.solana.com](https://explorer.solana.com), eligiendo Devnet: tiene que decir «Program Account» y «Executable: Yes».
+8. **Prueba el programa sin interfaz.** Hay dos formas, y ninguna la hemos probado todavía nosotros:
+   - la pestaña Test de Playground, en el panel izquierdo, para llamar las instrucciones del programa ya desplegado, en el orden que te dio tu IA;
+   - pedirle a tu IA un archivo de pruebas para Playground (`tests/anchor.test.ts`) y ejecutarlo escribiendo `test` en la terminal de Playground, como indica la documentación de Anchor.
+
+   Cada llamada queda como una transacción que puedes abrir en el explorador.
+9. **Sube el código a un repositorio público.** En GitHub creas un repositorio público y, con «Add file» y «Create new file», pegas el programa con el nombre `programa/lib.rs` (al escribir la barra, GitHub crea la carpeta). Sube también el IDL, como `programa/idl.json`, y un README que diga qué problema resuelve, cuál es la dirección del programa en devnet y cómo probarlo. No hace falta instalar nada.
+10. **Graba el video,** de menos de 3 minutos: el problema, el programa en Playground, una llamada a una instrucción y la transacción en el explorador.
+
+Con eso ya puedes enviar la entrega. Lo que no tienes es el link a la demo en vivo, que es lo que pide además el premio principal.
+
+### Si te queda tiempo: la interfaz
+
+Esta parte no está probada de punta a punta. En nuestra prueba, la IA gratuita se equivocó varias veces y hubo que corregir harto: la app llegó a correr en el computador y a conectar la billetera, pero con fallas. Parte solo cuando tengas lista la meta mínima.
+
+1. **Instala Node** en su versión LTS, desde [nodejs.org](https://nodejs.org). Si usas un computador donde no puedes instalar nada, GitHub Codespaces trae Node en el navegador; no lo hemos probado.
+2. **Crea el proyecto** con `npm create vite@latest`, eligiendo React y TypeScript.
+3. **Pídele la interfaz a tu IA,** pegando la dirección del programa y el IDL:
+
+   ```
+   Con la especificación, la dirección del programa desplegado en devnet y su IDL, escribe la interfaz como una app Vite + React + TypeScript. Usa el wallet adapter de Solana con Phantom en devnet, y @coral-xyz/anchor en la versión 0.29.0 para llamar al programa, porque el IDL viene en el formato antiguo de Anchor. Usa la menor cantidad de archivos posible y entrégame cada archivo completo con su ruta, más un README con qué hace la app, cómo probarla y la dirección del programa.
+
+   Dirección del programa: [pega aquí]
+   IDL: [pega aquí]
+   ```
+
+   En nuestra prueba, Playground entregó el IDL en el formato antiguo de Anchor: por eso el pedido fija la versión 0.29.0. DeepSeek entrega cada archivo por separado, y hay que guardarlo con su nombre y en su carpeta. ChatGPT puede entregar el proyecto en un archivo ZIP; nosotros lo vimos con una cuenta pagada.
+4. **Pruébala en tu computador** con `npm install` y `npm run dev`. Cuando salga un error, pégaselo a tu IA y reemplaza el archivo completo. Cuenta con varias vueltas.
+5. **Súbela al mismo repositorio.** Arrastra todos los archivos y carpetas menos `node_modules`: la web de GitHub no acepta más de 100 archivos por subida. Si sabes usar git, usa git.
+6. **Publícala en Vercel:** importas el repositorio y presionas Deploy. Queda un link del tipo nombre.vercel.app. Si la construcción falla, Vercel muestra el error en su registro: corriges el archivo en GitHub y Vercel vuelve a desplegar.
+
+## Ruta NoahAI
+
+Sirve si tienes créditos o si tu equipo paga un plan. Basta una cuenta de NoahAI por equipo.
+
+- **Descuento:** el viernes 27, NoahAI tiene 30 % de descuento en toda su plataforma, sin cupón, desde las 08:00 de Chile.
+- **Precio:** el plan Starter costaba USD 10 antes del descuento cuando lo contratamos, el lunes 23. Es una suscripción que se renueva cada mes: si no la vas a seguir usando, cancélala.
 
 Este es el recorrido que ChileDAO probó completo el lunes 23. Una app simple tomó unos 25 minutos y usó cerca del 11 % de los créditos de un plan de USD 10. El martes 24, la Ruta del Hacker de los [ejemplos](ejemplos/ruta-del-hacker.md), con su especificación completa y el modelo Core, quedó con el programa en devnet en unos 5 minutos.
 
@@ -22,6 +91,18 @@ Este es el recorrido que ChileDAO probó completo el lunes 23. Una app simple to
 8. **Prueba la app con Phantom en modo de prueba.** Cada uso gasta muy poco SOL de prueba, cerca de 0,001. En modo de prueba el historial de Phantom aparece vacío: para ver una transacción, usa el enlace al explorador que trae la app.
 
 ## Problemas frecuentes
+
+### En Solana Playground
+
+| Síntoma | Causa | Qué hacer |
+| --- | --- | --- |
+| Aparece un error 410 al pedir SOL | Playground intenta pedir SOL por su cuenta, y ese faucet está cerrado | Pedir SOL en faucet.solana.com para la dirección de la billetera de Playground |
+| El Build falla | Un error en el código que escribió la IA | Pegarle el error completo a la IA y reemplazar el archivo entero |
+| El Deploy muestra «Reached rate-limits» o «transactions not confirmed, retrying» | El servidor público de devnet limita las solicitudes | Esperar sin cerrar la pestaña; en nuestra prueba terminó en 7 minutos |
+| La dirección del programa no aparece como programa en el explorador | El despliegue no ha terminado, o el explorador no está en Devnet | Esperar «Deployment successful» y elegir Devnet en el explorador |
+| En otro computador o navegador no están el proyecto ni la billetera | Playground los guarda en el navegador | Trabajar siempre en el mismo navegador y guardar el archivo de la billetera |
+
+### En NoahAI y al probar la app
 
 | Síntoma | Causa | Qué hacer |
 | --- | --- | --- |
@@ -40,12 +121,19 @@ Este es el recorrido que ChileDAO probó completo el lunes 23. Una app simple to
 
 ## Qué necesitas para entregar
 
-- **Un programa en Rust desplegado en devnet y su dirección.** Sin dirección no se puede enviar el formulario.
+Obligatorio para enviar el formulario:
+
+- **La dirección de tu programa.** Sirve una de devnet. Sin dirección no se puede enviar.
 - **Un repositorio público en GitHub.** Antes de hacerlo público, revisa que no tenga claves propias ni la llave del programa.
-- **Un README** con qué problema resuelve el proyecto, cómo instalarlo y probarlo, y las direcciones de despliegue. Si partiste con código propio anterior, cuenta qué existía y qué hiciste durante la hackathon. NoahAI no crea el README: tienes que agregarlo tú.
-- **La demo en vivo publicada**, en Vercel o Netlify, para que el jurado pruebe el proyecto.
 - **Un video de menos de 3 minutos** que muestre el producto funcionando, con un link público. Uno más largo queda fuera de premios; en el track de Pollar el máximo es de 2 minutos.
-- **Capturas de pantalla**, y el nombre, la frase corta y la descripción del proyecto.
+
+Para optar al premio principal, además:
+
+- **Un programa propio en Rust,** desplegado al menos en devnet.
+- **Un README** con qué problema resuelve el proyecto, cómo instalarlo y probarlo, y las direcciones del programa. Si partiste con código propio anterior, cuenta qué existía y qué hiciste durante la hackathon. NoahAI no crea el README: tienes que agregarlo tú.
+- **El link a la demo en vivo,** publicada en Vercel o Netlify, para que el jurado pruebe el proyecto.
+
+El formulario pide también capturas de pantalla, y el nombre, la frase corta y la descripción del proyecto.
 
 ## El formulario
 
