@@ -4,7 +4,16 @@
 
 Este repositorio es para quienes participan desde Chile en la Dev3pack Global Hackathon sobre Solana, del viernes 27 al domingo 29 de noviembre de 2026. Es un método en cinco pasos para llegar de una idea propia a un proyecto entregado, aunque nunca hayas construido sobre una blockchain. Los cuatro primeros pasos van antes de lo técnico: encontrar la idea, validarla, evaluarla con los criterios del jurado y convertirla en una especificación. El quinto explica dos rutas para construir y entregar: una gratis y otra con NoahAI.
 
-Lo armó ChileDAO, que organiza la Build Station de Santiago, con las reglas de la hackathon, lo que enseñaron las sesiones de preparación y sus propias pruebas.
+## Quiénes estamos detrás
+
+**ChileDAO** es una comunidad abierta para aprender e impulsar el uso de IA y blockchain en Chile. Nació en 2025 y hoy organiza hackathones, talleres y eventos, y acompaña a empresas y proyectos que quieren entrar a Chile y Latinoamérica. Desde junio de 2025 ha organizado 22 eventos, más de 1.000 personas siguen sus actividades en Luma y 200 participan en su grupo de WhatsApp. Nos juntamos todos los martes a las 19:00, por Discord, y estamos conformando una cooperativa de trabajo para aportar a la transformación digital de Chile.
+
+- **[Síguenos en redes desde nuestro Linktree](https://linktr.ee/web3chile):** ahí están Instagram, X, LinkedIn, Telegram y el Discord de las reuniones de los martes.
+- **[Entra al grupo de WhatsApp de ChileDAO](https://chat.whatsapp.com/IU38ZwHD8MIFMrB11WbNxt):** ahí avisamos de cada actividad y se resuelven dudas.
+
+**Dev3pack** es la comunidad global que organiza la hackathon. Forma a nuevas personas que construyen en Web3 e IA, con foco en quienes están menos representadas en el mundo de la tecnología, y tiene fuerte presencia en el sur global, con sedes en África, Asia y América Latina. Esta edición de la hackathon tiene sedes en 24 países. Sus sesiones y bootcamps están en su [canal de YouTube](https://www.youtube.com/@dev3pack).
+
+Este método lo armó ChileDAO, que organiza la Build Station de Santiago, con las reglas de la hackathon, lo que enseñaron las sesiones de preparación y sus propias pruebas.
 
 ## Si partes de cero: qué es una blockchain y por qué Solana
 
