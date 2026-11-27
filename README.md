@@ -10,7 +10,7 @@ Lo armó ChileDAO, que organiza la Build Station de Santiago, con las reglas de 
 
 En la sesión del martes 24, Santiago mostró que NoahAI rinde más como ejecutor: la idea se piensa en otra IA, y a NoahAI se le entrega una especificación ya cerrada. En su demo gastó cerca de 2 millones de créditos y el programa no alcanzó a quedar listo. Tus créditos son limitados: piensa primero y construye después.
 
-El jueves 26, Dev3pack avisó que se alcanzó el límite de créditos de NoahAI para la hackathon. Por eso el Método tiene ahora una ruta gratis: una IA gratuita escribe el programa y se despliega en devnet con Solana Playground, desde el navegador. Pensar primero sirve igual en las dos rutas.
+El jueves 26, Dev3pack avisó que se alcanzó el límite de créditos de NoahAI para la hackathon. Por eso el Método tiene ahora una ruta gratis: una IA gratuita escribe el programa y se despliega en devnet con Solana Playground, desde el navegador. Pensar primero sirve igual en las dos rutas. Ese mismo jueves, en su sesión de consejos, la organizadora de la hackathon recomendó lo mismo: antes de construir, pídele a una IA un prompt claro de lo que quieres hacer.
 
 ## Cómo usarlo
 
@@ -57,6 +57,7 @@ Si algo cambia en la hackathon, manda lo que diga el panel de Dev3pack.
 - La pestaña Mentors del panel: filtra por país, idioma y habilidades.
 - El [grupo de Telegram de la hackathon](https://t.me/+rlBixDYGfig1Zjc8).
 - La Build Station de Santiago, el viernes 27 de 13:00 a 18:00 en la UDP: [inscripción en Luma](https://luma.com/ovbwi0fj).
+- El panel de Dev3pack y sus [preguntas frecuentes](https://hack.dev3pack.xyz/faq): la organizadora avisó que desde el viernes no alcanza a responderle a cada persona, y que casi todas las respuestas están ahí.
 
 ## Fuentes
 
@@ -65,6 +66,7 @@ Si algo cambia en la hackathon, manda lo que diga el panel de Dev3pack.
 - Sesión «Product Ideation: how to find real ideas», lunes 23 de noviembre, con Deepesh y Solene.
 - Sesión «Vibecode your first app on Solana», martes 24 de noviembre, con Santiago.
 - Sesión sobre x402, miércoles 25 de noviembre, con Fabián.
+- Sesión «Best tips to master the hackathon», jueves 26 de noviembre, de Dev3pack: [video](https://www.youtube.com/watch?v=S9LyP7V82UQ).
 - Prueba completa de NoahAI hecha por ChileDAO el lunes 23 de noviembre.
 - Prueba de la ruta gratis hecha por ChileDAO el jueves 26 de noviembre: un programa escrito por DeepSeek, compilado y desplegado en devnet con Solana Playground.
 - Aviso de Dev3pack sobre los créditos de NoahAI, del jueves 26 de noviembre.

@@ -11,6 +11,17 @@ En la sesión del lunes 23, Deepesh y Solene insistieron en lo mismo: no elijas 
 
 El ejemplo que mostraron: un estudiante que venía de la comedia armó un mercado de predicciones en vivo, donde se apuesta sobre casi cualquier cosa, y pasó los 8 mil usuarios. Le fue bien porque construyó lo que conocía, para la red que ya tenía.
 
+## Lo que sumó la organizadora el jueves 26
+
+En su sesión de consejos para la hackathon ([video](https://www.youtube.com/watch?v=S9LyP7V82UQ), en inglés) agregó:
+
+- **Toda app necesita usuarios o liquidez.** Elige un área donde tengas llegada: tu oficio, tu país o tu comunidad. Así tu caso de uso es concreto y no el mismo de todos.
+- **Si no tienes idea,** parte de una app que usas todos los días y piensa qué le suma la blockchain. Que funcione bien en el celular.
+- **Mira otras redes.** Busca apps que funcionan en otros ecosistemas y todavía no existen en Solana.
+- **Si es DeFi,** revisa en [DeFi Llama](https://defillama.com) qué protocolos mueven liquidez real en cada red.
+- **Los ganadores anteriores son referencia, no molde.** Ganaron porque consiguieron usuarios e impacto en su área, no solo por ser novedosos.
+- **Un solo foco.** Puedes postular a varios tracks, pero conviene concentrarse en una línea.
+
 ## Preguntas para partir
 
 - ¿Qué problema vives tú, o alguien cercano, con frecuencia?
@@ -23,7 +34,7 @@ El ejemplo que mostraron: un estudiante que venía de la comedia armó un mercad
 
 | Fuente | Qué tiene |
 | --- | --- |
-| [Colosseum Copilot](https://colosseum.com/copilot) | Compara tu idea con más de 5.400 entregas de hackathones. Se instala como skill en tu agente de IA |
+| [Colosseum Copilot](https://colosseum.com/copilot) | Compara tu idea con más de 11.000 entregas de hackathones. Se instala como skill en tu agente de IA |
 | [Proyectos del Colosseum Agent Hackathon](https://colosseum.com/agent-hackathon/projects) | Agentes de IA ya construidos |
 | [Superteam Build, ideas](https://superteam.fun/build/ideas) y [SendAI Ideas](https://ideas.sendai.fun/) | Ideas y prompts pensados para hackathon |
 | [Ganadores de hackathones de Solana](https://superteam.fun/build/past-hackathon-winners) | Proyectos que ganaron |

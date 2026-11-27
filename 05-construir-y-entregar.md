@@ -2,12 +2,12 @@
 
 ## Lo que cambió el jueves 26
 
-Dev3pack avisó que se alcanzó el límite de créditos de NoahAI para la hackathon y cerró el formulario de créditos. Eso no afecta tu inscripción: puedes participar igual. Por eso ahora hay dos rutas para construir:
+Dev3pack avisó que se alcanzó el límite de créditos de NoahAI para la hackathon y cerró el formulario de créditos. Eso no afecta tu inscripción: puedes participar igual. Si llenaste el formulario a tiempo, revisa tu cuenta de NoahAI antes de pagar: si te asignaron créditos, aparecen ahí. La organización dijo que se entregan por orden de llegada y que no alcanzan para todas las personas. Por eso ahora hay dos rutas para construir:
 
 | | Ruta gratis | Ruta NoahAI |
 | --- | --- | --- |
 | Cuánto cuesta | Nada | Créditos, si alcanzaste a recibirlos, o un plan pagado |
-| Qué queda construido | El programa en devnet. La interfaz es opcional y toma más trabajo | El programa en devnet y la interfaz publicada |
+| Qué queda construido | El programa en devnet. La interfaz, y con ella la demo en vivo, toma más trabajo | El programa en devnet y la interfaz publicada |
 | Cuánto toma | El programa, el repositorio y el video caben en la tarde del viernes. La interfaz toma el resto del fin de semana | La app completa sale el mismo viernes: en nuestras pruebas, entre 5 y 30 minutos de construcción |
 | Qué tan probada está | El programa, probado por ChileDAO el jueves 26. La interfaz, solo a medias | Probada completa por ChileDAO el lunes 23 y repetida después con otras apps |
 | Para quién | Equipos sin créditos | Equipos con créditos o que paguen un plan |
@@ -16,16 +16,30 @@ Las dos parten igual: con tu especificación, hecha con [00-instrucciones-para-t
 
 Gratis se puede, pero toma más tiempo. La entrega cierra el domingo 29 a las 04:00, así que en la práctica tienes hasta el sábado en la noche. Si quieres la app completa el mismo viernes, la ruta es NoahAI.
 
+## Lo que pidió la organización el jueves 26
+
+En su sesión de consejos para la hackathon ([video](https://www.youtube.com/watch?v=S9LyP7V82UQ), en inglés), la organizadora repasó lo que más pesa al evaluar. Sirve para las dos rutas:
+
+- **Una app real, no una landing.** Tiene que ser un producto donde la persona usuaria hace algo. Entregar solo una landing, dijo, es eliminatorio.
+- **Tres cosas para que puedan evaluarte:** el video de máximo 3 minutos, el repositorio público en GitHub y la app publicada en Vercel, Netlify o algo similar.
+- **El repositorio, en público.** Si queda privado no lo pueden revisar, y el proyecto queda eliminado.
+- **Un README completo.** Lo lee la IA del jurado y le da el contexto técnico para revisar tu repositorio. Suma un diagrama de cómo funciona la app, hecho por ejemplo en [Excalidraw](https://excalidraw.com) y pegado como captura: ayuda aunque no todo funcione, porque muestra qué quisiste construir.
+- **Evalúan jueces locales y una IA.** La IA revisa a fondo la integración técnica, para comprobar que el proyecto hace lo que dice, y pone un puntaje con fortalezas y mejoras. Al final, cada proyecto recibe su informe.
+- **Un solo foco.** Puedes postular a varios tracks, pero recomendó concentrarse en una línea. Cada partner tiene sus requisitos: respétalos.
+- **Muéstralo en público.** Cuando envíes, y de nuevo con el resultado final, publica tu proyecto y etiqueta a @dev3pack, @solana y @TryNoahAI.
+
 ## Antes de construir
 
 - **Inscripción:** en la [plataforma de Dev3pack](https://app.dev3pack.xyz/s/CHILE) y, si vas a la Build Station, en el [Luma de ChileDAO](https://luma.com/ovbwi0fj), con el mismo correo. Puedes inscribirte hasta el mismo viernes.
 - **Cuentas:** GitHub, Vercel (el plan gratis alcanza y la cuenta se crea con GitHub) y una IA gratuita, como DeepSeek, ChatGPT o Claude. NoahAI (entras con Google en [trynoah.ai](https://trynoah.ai)) solo si vas por esa ruta.
-- **Phantom en modo de prueba:** instala la extensión y, en Configuración, entra a Developer Settings, activa Testnet Mode y elige Solana Devnet.
-- **SOL de prueba:** se pide en [faucet.solana.com](https://faucet.solana.com), entrando con GitHub: sin GitHub permite dos solicitudes cada 8 horas, y con GitHub el límite sube. Para usar una app basta 1 SOL en Phantom. Si vas por la ruta gratis, necesitas además 5 SOL para la billetera de Solana Playground: el paso 3 de esa ruta dice cómo pedirlos.
+- **Phantom en modo de prueba:** instala la extensión y, en Configuración, entra a Developer Settings, activa Testnet Mode y elige Solana Devnet. Si ya usas Phantom con fondos reales, crea una cuenta aparte para la hackathon: la organización recomienda no desarrollar con tu wallet personal.
+- **SOL de prueba:** se pide en [faucet.solana.com](https://faucet.solana.com), entrando con GitHub: sin GitHub permite dos solicitudes cada 8 horas, y con GitHub el límite sube. Pídelo apenas puedas: la organización advirtió que durante la hackathon todos lo piden a la vez y el faucet se satura. Para usar una app basta 1 SOL en Phantom. Si vas por la ruta gratis, necesitas además 5 SOL para la billetera de Solana Playground: el paso 3 de esa ruta dice cómo pedirlos.
 
 ## Ruta gratis
 
-Para enviar la entrega son obligatorias tres cosas: la dirección de tu programa en devnet, un repositorio público y un video de menos de 3 minutos. Ninguna exige una interfaz. Por eso esta ruta tiene una meta mínima, que ya deja una entrega válida, y una parte opcional.
+Para enviar la entrega son obligatorias tres cosas: la dirección de tu programa en devnet, un repositorio público y un video de menos de 3 minutos. Ninguna exige una interfaz. Por eso esta ruta tiene dos partes: una meta mínima, que ya te deja enviar, y después la interfaz.
+
+No dejes la interfaz como un extra. La organización cuenta la app publicada entre las tres cosas clave para evaluar un proyecto, y el premio principal pide el link a la demo en vivo. Sin app publicada el formulario se puede enviar, pero el jurado tiene menos que evaluar y quedas fuera del premio principal.
 
 ChileDAO la probó el jueves 26 con una app de votación. El programa lo escribió DeepSeek en su versión gratuita, compiló en Solana Playground en 7 segundos y quedó desplegado en devnet en 7 minutos.
 
@@ -53,9 +67,9 @@ ChileDAO la probó el jueves 26 con una app de votación. El programa lo escribi
 9. **Sube el código a un repositorio público.** En GitHub creas un repositorio público y, con «Add file» y «Create new file», pegas el programa con el nombre `programa/lib.rs` (al escribir la barra, GitHub crea la carpeta). Sube también el IDL, como `programa/idl.json`, y un README que diga qué problema resuelve, cuál es la dirección del programa en devnet y cómo probarlo. No hace falta instalar nada. Si tu programa tiene una instrucción que deja fijo al administrador, como `initialize`, llámala tú antes de publicar la dirección: quien la llame primero queda como administrador.
 10. **Graba el video,** de menos de 3 minutos: el problema, el programa en Playground, una llamada a una instrucción y la transacción en el explorador.
 
-Con eso ya puedes enviar la entrega. Lo que no tienes es el link a la demo en vivo, que es lo que pide además el premio principal.
+Con eso ya puedes enviar la entrega. Lo que no tienes es el link a la demo en vivo: lo pide el premio principal y es una de las tres cosas que la organización considera clave para evaluar. Envía igual, para asegurar la entrega, y sigue con la interfaz: puedes editar el formulario hasta el cierre.
 
-### Si te queda tiempo: la interfaz
+### Después: la interfaz y la demo en vivo
 
 Esta parte no está probada de punta a punta. En nuestra prueba, la IA gratuita se equivocó varias veces y hubo que corregir harto: la app llegó a correr en el computador y a conectar la billetera, pero con fallas. Parte solo cuando tengas lista la meta mínima.
 
@@ -129,20 +143,22 @@ Este es el recorrido que ChileDAO probó completo el lunes 23. Una app simple to
 Obligatorio para enviar el formulario:
 
 - **La dirección de tu programa.** Sirve una de devnet. Sin dirección no se puede enviar.
-- **Un repositorio público en GitHub.** Antes de hacerlo público, revisa que no tenga claves propias ni la llave del programa.
+- **Un repositorio público en GitHub.** Antes de hacerlo público, revisa que no tenga claves propias ni la llave del programa. Si queda privado, el jurado no puede revisarlo y el proyecto queda eliminado.
 - **Un video de menos de 3 minutos** que muestre el producto funcionando, con un link público. Uno más largo queda fuera de premios; en el track de Pollar el máximo es de 2 minutos.
 
 Para optar al premio principal, además:
 
 - **Un programa propio en Rust,** desplegado al menos en devnet.
-- **Un README** con qué problema resuelve el proyecto, cómo instalarlo y probarlo, y las direcciones del programa. Si partiste con código propio anterior, cuenta qué existía y qué hiciste durante la hackathon. NoahAI no crea el README: tienes que agregarlo tú.
-- **El link a la demo en vivo,** publicada en Vercel o Netlify, para que el jurado pruebe el proyecto.
+- **Un README** con qué problema resuelve el proyecto, cómo instalarlo y probarlo, y las direcciones del programa. Hazlo completo, porque lo lee también la IA del jurado, y suma si puedes un diagrama de cómo funciona la app. Si partiste con código propio anterior, cuenta qué existía y qué hiciste durante la hackathon. NoahAI no crea el README: tienes que agregarlo tú.
+- **El link a la demo en vivo,** publicada en Vercel o Netlify, para que el jurado pruebe el proyecto. Tiene que ser una app que se usa, no una landing.
 
-El formulario pide también capturas de pantalla, y el nombre, la frase corta y la descripción del proyecto.
+El formulario pide también capturas de pantalla, y el nombre, la frase corta y la descripción del proyecto. La organizadora mencionó además logo y banner: tenlos a mano.
 
 ## El formulario
 
 Está en la pestaña Project del panel y tiene 5 pasos: Project, Images, Links & video, Team, y Review & submit. Puedes guardarlo como borrador y editar todo hasta el cierre. Si participas desde la Build Station, en el campo Hub elige «Dev3pack Build Station (Santiago)».
+
+Por cada track de partner que marques, el formulario pide explicar cómo lo integraste. Sé específico e indica el archivo donde está esa integración: le facilita el trabajo al jurado.
 
 ## Fechas, en hora de Chile
 
@@ -153,4 +169,4 @@ Está en la pestaña Project del panel y tiene 5 pasos: Project, Images, Links &
 | Sábado 28, 10:00 a 12:00 | Sesión online de feedback de proyectos |
 | Domingo 29, 04:00 | Cierre de entregas |
 
-La entrega cierra en la madrugada del sábado al domingo: organízate para terminar el sábado en la noche. Antes de enviar, abre cada link en una ventana privada para comprobar que es público.
+La entrega cierra en la madrugada del sábado al domingo: organízate para terminar el sábado en la noche. El panel muestra la hora de cierre en tu zona horaria. Antes de enviar, abre cada link en una ventana privada para comprobar que es público.

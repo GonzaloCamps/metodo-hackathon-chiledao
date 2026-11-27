@@ -30,6 +30,8 @@ El track principal pide un programa propio en Rust, así que la blockchain tiene
 - ¿Hay pagos, propiedad o reglas que se cumplen solas?
 - Si sacas la blockchain, ¿la app queda igual? Si la respuesta es sí, Solana está de adorno.
 
+El jueves 26, la organizadora de la hackathon lo repitió: construir sobre la blockchain es más que aceptar pagos en cripto.
+
 Dos ejemplos de la sesión:
 
 - Llevar a la cadena un activo del mundo real, como una carta coleccionable, para que quien la compre vea su historial y sepa si es legítima.

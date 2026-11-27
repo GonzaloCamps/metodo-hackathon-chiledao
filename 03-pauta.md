@@ -7,6 +7,8 @@
 - Esas 100 tienen una revisión más profunda: inspección del código, ajuste entre el equipo y el problema, y verificación de la demo en vivo.
 - Las señales que nombra Dev3pack son: cumplimiento de requisitos, claridad del producto, impacto real, calidad de la demo, despliegue, calidad del repositorio y profundidad en el uso de Solana y sus SDK.
 - El track local de Chile se evalúa con los mismos criterios que el premio principal, Best App Overall on Solana.
+- En la sesión del jueves 26, la organizadora contó que evalúan jueces locales y una IA. La IA lee el README y revisa a fondo la integración técnica. Al final, cada proyecto recibe un informe con sus fortalezas y lo que puede mejorar.
+- También pidió una app real, donde la persona usuaria hace algo: entregar solo una landing, dijo, es eliminatorio.
 
 ## Autoevaluación antes de construir
 
