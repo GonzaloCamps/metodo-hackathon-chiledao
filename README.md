@@ -15,21 +15,49 @@ Este repositorio es para quienes participan desde Chile en la Dev3pack Global Ha
 
 Este método lo armó ChileDAO, que organiza la Build Station de Santiago, con las reglas de la hackathon, lo que enseñaron las sesiones de preparación y sus propias pruebas.
 
-## Si partes de cero: qué es una blockchain y por qué Solana
+## Si partes de cero: por qué blockchain y por qué Solana
+
+### Primero, por qué una blockchain
 
 Una blockchain es un registro compartido que no depende de una sola empresa ni de un solo servidor. Muchos computadores guardan la misma copia y validan cada cambio, así que lo que queda escrito no se puede borrar ni alterar a escondidas. Sobre ese registro se escriben programas, también llamados contratos inteligentes, que cumplen sus reglas solos: mueven dinero, registran quién es dueño de algo o dejan una constancia pública.
 
+Eso le da a tu app tres cosas que una app normal no tiene:
+
+- **Un registro que nadie puede alterar,** ni siquiera tú: sirve para dejar constancia de algo.
+- **Dinero y propiedad programables:** pagos, premios o tokens que se mueven según las reglas del programa, sin un intermediario.
+- **Un sistema abierto:** cualquiera puede comprobar lo que pasó y construir encima de lo tuyo.
+
 Aprender a construir sobre una blockchain te sirve más allá de este fin de semana. Es la base de los pagos digitales, de los activos tokenizados y de los agentes de IA que pagan por su cuenta, y todavía pocas personas saben hacerlo.
 
-Solana es una blockchain que rinde bien en lo que más pesa para una app:
+### Por qué Solana, entre otras blockchains
 
-- **Es rápida:** produce un bloque cada 0,4 segundos, aproximadamente.
-- **Es barata:** cada transacción cuesta una fracción de centavo de dólar.
-- **Tiene con qué construir:** herramientas, documentación y una comunidad activa, también en español.
+No todas las blockchains sirven para lo mismo. Estas son las tres que más vas a oír:
 
-Por eso sirve para apps que la gente usa todos los días, y no solo para mover montos grandes.
+| | Bitcoin | Ethereum (red principal) | Solana |
+| --- | --- | --- | --- |
+| Para qué nació | Guardar y mover valor | Ser la primera plataforma de programas, o contratos inteligentes | Correr apps a gran escala, rápido y barato |
+| Un bloque nuevo cada | 10 minutos, aproximadamente | 12 segundos | 0,2 segundos, aproximadamente |
+| Cuándo una transacción queda firme | Cerca de una hora, por convención | Cerca de 13 minutos | Menos de un segundo |
+| Cuánto cuesta una transacción | Varía con la demanda | Varía con la demanda | Base fija de 0,000005 SOL por firma: una fracción de centavo de dólar |
+| Cómo crece | Con redes aparte, encima de la principal | Con redes de segunda capa (L2), encima de la principal | En una sola red |
+| En qué se programa | Casi no admite programas | Solidity | Rust |
 
-Por ahora basta con eso. En el paso 2 del método vas a volver a la pregunta «¿por qué en Solana?», esta vez con tu propia idea: qué hace la blockchain en tu app que una app normal no puede, y cómo aprovecharla mejor.
+Lo que eso significa cuando construyes una app:
+
+- **Responde como una app normal.** Con un bloque cada 0,2 segundos y transacciones que quedan firmes en menos de un segundo, quien usa tu app no espera. Esto último es nuevo: llegó con la actualización Alpenglow, en octubre de 2026.
+- **Cada acción cuesta casi nada.** La comisión es tan baja que puedes registrar, premiar o cobrar montos muy chicos muchas veces, sin que el costo se coma el valor. Por eso en Solana funcionan los micropagos y los pagos entre agentes de IA.
+- **Todo vive en una sola red.** Ethereum bajó sus costos sumando muchas redes de segunda capa, pero los usuarios y los fondos quedan repartidos entre ellas. En Solana todos los programas y tokens comparten el mismo estado: tu programa puede usar otro en la misma transacción, sin puentes.
+- **Procesa en paralelo.** Cada transacción declara qué cuentas va a tocar, y las que no se cruzan se ejecutan al mismo tiempo. La red principal de Ethereum, en cambio, las ejecuta de a una. Así Solana aguanta más carga.
+- **Tiene herramientas para partir rápido.** Con Anchor, Solana Playground y la red de prueba, que entrega SOL gratis, puedes escribir, desplegar y probar un programa desde el navegador. Es lo que usa este método en el paso 5.
+
+Lo que conviene saber, para elegir con los ojos abiertos:
+
+- **Ethereum es más antigua y concentra más valor.** Tiene muchos más validadores y cerca de la mitad del dinero de las finanzas descentralizadas. Cuando lo único que importa es la máxima seguridad, muchos proyectos la prefieren.
+- **Validar en Solana exige equipos potentes,** así que la red tiene menos validadores. Es la crítica más frecuente a su descentralización.
+- **Solana se cayó varias veces entre 2021 y comienzos de 2024.** Desde febrero de 2024 no ha tenido una caída completa.
+- **Rust y el modelo de cuentas cuestan más que Solidity al principio.** Por eso este método se apoya en una IA y en Anchor.
+
+En resumen: para una app que la gente usa todos los días, con muchas acciones chicas, Solana es una de las opciones más fuertes. En el paso 2 del método vas a volver a la pregunta «¿por qué en Solana?», esta vez con tu propia idea: qué hace la blockchain en tu app que una app normal no puede, y cómo aprovecharla mejor.
 
 Si quieres la base completa en español, está la clase [Basics of Blockchain](https://www.youtube.com/watch?v=gZLBW0FJbHk) del Solana Rust Bootcamp de Dev3pack.
 
@@ -121,6 +149,7 @@ Si algo cambia en la hackathon, manda lo que diga el panel de Dev3pack.
 - Sesión [«Enable micro-payments with x402 on Solana»](https://www.youtube.com/watch?v=BoqpFVoYWQg), miércoles 25 de noviembre, con Fabián.
 - Sesión [«Best tips for your first hackathon»](https://www.youtube.com/watch?v=S9LyP7V82UQ), jueves 26 de noviembre, de Dev3pack.
 - Clases [«Basics of Blockchain»](https://www.youtube.com/watch?v=gZLBW0FJbHk) y [«Deployment + Tips & Tricks»](https://www.youtube.com/watch?v=ZWlm8H3htKc), en español, del Solana Rust Bootcamp de Dev3pack.
+- Datos de Solana y su comparación con otras blockchains, revisados el 27 de noviembre de 2026: [comisiones](https://solana.com/docs/core/fees) y [Alpenglow](https://solana.com/upgrades/alpenglow) en la documentación de Solana, y la [comparación técnica con Ethereum](https://www.helius.dev/solana-vs-ethereum) de Helius.
 - Prueba completa de NoahAI hecha por ChileDAO el lunes 23 de noviembre.
 - Prueba de la ruta gratis hecha por ChileDAO el jueves 26 de noviembre: un programa escrito por DeepSeek, compilado y desplegado en devnet con Solana Playground.
 - Correo de Dev3pack sobre los créditos de NoahAI, del jueves 26 de noviembre: créditos agotados y 30 % de descuento.
